@@ -2,7 +2,7 @@
 
 **EECE490 Stories Coffee Hackathon**
 
-**Team:** _<add every team member's full name here>_ · Repository owner: `sarmadosman`
+**Team:** _Sarmad Osman and Raymond Masri_ · Repository owner: `sarmadosman`
 
 ---
 
