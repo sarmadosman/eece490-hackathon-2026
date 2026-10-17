@@ -1,6 +1,6 @@
 # Methods and assumptions
 
-**Current primary investigation:** [customer-level methods](customer_methodology.md) describe audience breadth, fixed repeat-account cohorts, cross-branch continuity, and complete follow-up. The user requested uncommon customer patterns rather than the earlier Garden/discount story. The item, branch-cost, forecast, and food-offer methods below are retained as supporting work. Current business evidence cards and value scenarios come from `customers.py`; earlier item/branch cards/scenarios are exported with the `supporting_item_` prefix.
+**Current final argument:** demand and preparation, observational promotion comparison with uncertainty, and customer continuity with testable timing. The latest changes refine the interpretation rather than replacing this playbook. [Customer methods](customer_methodology.md) document fixed cohorts, coverage, and complete follow-up. `scripts/promotion_test.py` preserves its calculations; its overlapping non-promotion comparisons describe variation, not a confidence interval or power analysis. The roughly 29% same-mix benchmark is supporting accounting, while the pilot criterion is total branch contribution after incremental costs. Garden cost/margin and food-offer material below remain supporting work.
 
 ## Calendar extension and revised objective
 

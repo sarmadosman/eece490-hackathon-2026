@@ -1,82 +1,61 @@
-# Customer continuity: three less obvious business arguments
+# Three conclusions for the abrupt-change playbook
 
-**Problem:** How can Stories apply changes to maximize profit in times of abrupt change?
+**Business problem:** How can Stories apply changes to maximize profit in times of abrupt change?
 
-Investigate customer behavior rather than centering the submission on branch margins or discounts. The evidence supports separating observed audience growth from repeat frequency, checking chain-wide continuity before calling a branch customer lost, and testing the timing of inactivity decisions. These patterns concern operational interpretation and customer-service policy; no causal war effect or customer-response uplift has been established.
+The existing argument is retained: use observed demand to guide preparation, assess promotions through their total contribution, and evaluate customer continuity and intervention timing. These refinements separate observation from causal effect and conditional economics. Garden's margin/cost investigation remains supporting material.
 
-## Population and comparisons
+## Conclusion 1: Recorded orders increased, while selected aggregate trading measures remained broadly similar.
 
-The supplied data contain 33,887 orders, 21,534 with Customer ID, and 3,494 distinct observed IDs over January–June. Approximately 36.5% of orders have no ID. We do not infer the number of unique anonymous customers. IDs are assumed to represent persistent accounts across branches; this must be verified with the source system.
+**Measured:** the 28 days after March 2 recorded 5,030 orders versus 4,611 in the preceding 28 days (+9.1%). Across the multi-day phases, evening share ranged from 50.0% to 51.0%, takeaway share from 39.7% to 41.3%, recorded gross profit per order from $5.28 to $5.32, and meal attachment from approximately 2.0% to 2.4%. These aggregates do not establish equivalence, exclude branch/product changes, or rule out calendar effects.
 
-The main windows are February 2–March 1 and March 2–29: equal 28-day periods with matching weekday exposure. Ramadan and Lent overlap them differently. Customer tables also compare 14-day windows and Ramadan/Lent starts and ends. Customer-ID coverage is 64.3% before and 63.4% after. Similar coverage does not establish unbiased or representative capture.
+Similar increases at other cutoffs weaken the interpretation that the observed growth uniquely marks March 2; they do not rule out conflict-related effects. Ramadan and Lent overlap the cutoff, and model-dependent calendar associations do not provide a reliable causal decomposition.
 
-[Window metrics](customer_window_summary.csv), [calendar exposure](event_window_calendar_exposure.csv), [customer methods](../docs/customer_methodology.md).
+**Decision and validation:** test a recent matching-weekday preparation rule at each branch while logging waste, stockouts, availability, service, and incremental operating costs. At Harbour, the prior-four-matching-weekdays rule reduces historical bakery-unit MAE from 7.52 to 5.49 and meal-unit MAE from 2.90 to 2.20 relative to the previous-weekday rule. Forecast accuracy is not measured waste savings or proof of an optimal stock level. The pre-cutoff projection is calendar-unadjusted, with uncalibrated historical-error bands. Define a material operating threshold and show uncertainty excludes it before concluding no material change.
 
-## Pattern 1: growing traffic can conceal modest repeat-cohort change
+Evidence: [phase metrics](calendar_phase_summary.csv), [alternative cutoffs](alternative_cutoff_comparisons.csv), [forecast backtests](forecast_backtest_scores.csv), [preparation backtest](preparation_backtest.csv).
 
-| Measure | Before | After |
-|---|---:|---:|
-| All orders | 4,611 | 5,030 |
-| Identified orders | 2,963 | 3,188 |
-| Distinct active identified accounts | 1,978 | 2,104 |
-| Orders per active identified account | 1.498 | 1.515 |
-| Distinct customer-days per active account | 1.465 | 1.484 |
+**Figure — demand and overlap:** [calendar_timeline.png](figures/calendar_timeline.png) shows increasing recorded orders alongside selected aggregate measures. Compare their trajectories without treating broad similarity as equivalence.
 
-The audience increases 6.4%, while order frequency per active account increases about 1.2%. The exact symmetric accounting decomposition assigns approximately 189.8 of the 225 extra identified orders (84.4%) to the audience-breadth component and 35.2 (15.6%) to the frequency component. This does not identify causes or attribute marketing success.
+## Conclusion 2: The observed promotion results do not establish that the discounts paid for themselves.
 
-A second distinction matters: 900 IDs appear after but not in the preceding 28-day window. **508 already appeared earlier in the file**. The remaining 392 are first observed in this limited history, not proven new customers. Reporting all 900 as acquisition would conflate reappearance with first observation.
+Harbour has two recorded 15%-off Cold Coffee/Desserts windows, March 12–19 and May 12–19. The observational promotion comparison reports promoted units/day of 30.1 before and during the March window, and 37.6 before and during the May window. Relative branch comparisons are +10.7% and −4.4%. The comparison adjusts for common movements if the branches would otherwise have followed comparable relative trends. It does not identify the no-promotion counterfactual. First-observed IDs among promoted-item buyers do not establish incremental customer acquisition.
 
-For an independent repeat-cohort check, freeze 584 accounts with at least two distinct recorded visit-days during January 5–February 1, before the comparison windows. Include all 584 in both windows, including zero-visit members. They record 504 → 513 orders, 488 → 504 customer-days, and $2,662.27 → $2,656.57 recorded gross profit. This is modest order change and essentially flat observed contribution under that definition, not a proven loyalty deterioration. Other calibration thresholds are exported and differ; no threshold was optimized for significance.
+**Uncertainty:** the 60 overlapping non-promotion windows produced relative changes with a central 95% range of approximately −21% to +16%. The observed promotion comparisons, +10.7% and −4.4%, lie within this background variation. This does not establish zero effect or rule out a break-even effect: negative background variation can mask positive promotion effects. These overlapping windows are descriptive sensitivity checks, not independent experiments or a calibrated power analysis.
 
-**Business argument:** traffic growth alone is insufficient evidence that existing customers are buying more habitually or that customer acquisition is succeeding. Separate audience breadth, reactivation, and fixed-cohort frequency before allocating customer-service or marketing effort. Measure the actual bottleneck instead of treating every newly active ID as a new customer.
+**Measured:** the two promotion windows recorded $471.55 in discounts relative to listed prices. This is not a measured causal profit loss: the quantities customers would have purchased without the promotion are unknown. **Conditional scenario:** holding quantities and product mix unchanged, charging full listed prices would have increased recorded gross profit by $471.55. Ordinary discounts, changes in demand, substitution, and later purchases could reduce or reverse that difference. We recommend a randomized holdout before repeating the promotion.
 
-**Test and conditional value:** if 1% of the 1,978 baseline identified accounts made one genuinely additional order at the observed post-window mean identified-order contribution, the conditional gross contribution would be about $103.15 before intervention and other incremental costs. That uplift is an assumption, not a forecast. Randomize any repeat-visit/service intervention and evaluate all assigned customers, including zero visits, over a fixed period.
+**Success criterion:** expand only if the randomized comparison shows a pre-agreed worthwhile improvement in total branch gross contribution after discounts and incremental operating costs. Report promoted-category units and the approximately 29% same-mix break-even benchmark as supporting measures. Include gains or losses elsewhere in the basket. The background comparisons do not establish the unobserved promotion-period counterfactual.
 
-Evidence: [decomposition](customer_growth_decomposition.csv), [window flows](customer_window_flows.csv), [independently fixed cohorts](customer_fixed_cohorts.csv), [conditional scenarios](business_value_scenarios.csv).
+Evidence: [promotion comparison](promotion_natural_experiment.csv), [overlapping background comparisons](promotion_placebo.csv). The historical CSV filename is retained for compatibility and does not imply causal identification. Reproduce with `python3 scripts/promotion_test.py --data /path/to/stories_transactions.csv`.
 
-## Pattern 2: branch absence can be continued business elsewhere
+**Figure — observational promotion comparison:**
 
-| Baseline branch cohort | Accounts before | Seen at same branch afterward | Seen only at other branches afterward | Not observed anywhere afterward |
-|---|---:|---:|---:|---:|
-| Garden | 864 | 242 | 306 | 316 |
-| Harbour | 1,166 | 405 | 296 | 465 |
-| Uptown | 507 | 81 | 216 | 210 |
+![Recorded promotion volumes, contribution, and overlapping background variation](figures/promotion_comparison.png)
 
-For Uptown, 426 previously active accounts do not appear there in the post-window. Of those, 216—**50.7%**—are observed elsewhere in the chain. This is a customer-continuity pattern, not a branch-margin diagnosis. It does not prove relocation, a new preferred branch, or a war-driven switch; routine multi-branch use and other cutoffs must be considered.
+The first two panels show raw before/during/after means; the third shows descriptive background relative changes. The graphic does not identify the unobserved counterfactual or provide a calibrated power test.
 
-**Business argument:** a branch-only loss-recovery list would include accounts still doing business with Stories. Evaluate customer continuity across the chain before treating a local absence as loss. Test branch-independent recognition, account continuity, availability information, or service routing where operationally appropriate.
+## Conclusion 3: Check chain-wide activity and test inactivity thresholds before targeting customers.
 
-**Economics and test:** under a hypothetical existing branch-loss contact policy costing $0.50 per contact, suppressing one loss-recovery contact for each of the 216 Uptown accounts already observed elsewhere would avoid $108 of assumed cost. No current policy, contact cost, or realized saving is known. Randomize the service/routing process against current practice, and measure chain-wide incremental contribution after costs; do not count branch transfer as new chain revenue.
+Among the 1,978 identified accounts active in the baseline window, 1,692 were observed again within 56 days and 286 were not observed. These are observed-account return measures, not estimates of permanent customer loss.
 
-A customer can belong to more than one baseline branch cohort. Do not sum rows as unique people or sum their gross-profit amounts as a chain-wide opportunity. Confirm globally consistent customer IDs before using cross-branch matches.
+Among baseline accounts not observed again at their original branch during the next 28 days, the share observed elsewhere was 49.2% for Garden, 38.9% for Harbour, and 50.7% for Uptown. Branch cohorts overlap and must not be summed as unique customers. Customer findings cover identified accounts only; 36.5% of orders lack IDs. Cross-branch results assume globally consistent IDs.
 
-Evidence: [branch-continuity partitions and alternative boundaries](customer_branch_continuity.csv).
+Of 774 baseline accounts unobserved during the first 28-day follow-up, 488 appeared during days 29–56. Their returns may already have been influenced by existing activity or interventions. This count does not measure avoidable incentives or prove that earlier contact would be ineffective.
 
-## Pattern 3: a short absence is not permanent customer loss
+Active identified accounts increase from 1,978 to 2,104, with identified orders per active account 1.498 → 1.515. Of 900 IDs observed in the second window but absent in the preceding one, 508 were previously observed earlier in the file; the others are first observed in the available history, not verified acquisitions. Fixed-cohort totals are descriptive and do not establish unchanged individual habits.
 
-Follow the **same 1,978 accounts** active in the pre-window:
+**Test intervention timing.** Compare contacting accounts after 28 days without an identified chain-wide purchase with contacting them after 56 days if they remain inactive. Historical returns do not establish which timing produces higher incremental contribution.
 
-| Complete follow-up after March 2 | Observed again | Not observed | Observed return rate |
-|---|---:|---:|---:|
-| 28 days, through March 29 | 1,204 | 774 | 60.9% |
-| 56 days, through April 26 | 1,692 | 286 | 85.5% |
+**Trial clock:** eligibility begins 28 days after each account’s last recorded chain-wide purchase. Randomize eligible accounts to contact immediately or wait another 28 days and contact only if still inactive. Evaluate both groups for 56 days from randomization, retaining every assigned account in the denominator. The historical fixed-window cohort is useful evidence; it is not itself an exact “days since last purchase” eligibility calculation.
 
-Of the 774 initially unobserved accounts, **488 (63.0%)** are observed during days 29–56. A longer horizon mechanically allows more returns; the practical finding is that a large group labelled absent by a short rule subsequently appears. Missing IDs can also hide actual visits. We have not established whether late returns happened without existing marketing or service interventions.
+**Conditional economics:** one genuinely additional order from 1% of baseline identified accounts would contribute about $103 before intervention and other incremental costs, using the observed identified-order mean contribution. This is an assumed response, not a measured improvement. Do not price the 488 historical later returns as avoided incentives.
 
-**Business argument:** compare staged inactivity/service policies instead of interpreting a 28-day absence as permanent churn. A coffee business has no directly observed cancellation event, so observed nonreturn and actual customer loss are distinct. This distinction is standard in [noncontractual customer-base research](https://www.brucehardie.com/papers/020/).
+Evidence: [coverage and account metrics](customer_window_summary.csv), [window flows](customer_window_flows.csv), [cross-branch activity](customer_branch_continuity.csv), [observed return](customer_followup.csv), [customer methods](../docs/customer_methodology.md).
 
-**Test:** compare an existing short-horizon policy with an alternative staged policy using randomized timing and the same full 56-day outcome horizon. Track chain-wide contribution per assigned account, actual contact/service costs, and earlier/later return. Do not assume waiting 56 days is optimal; some high-value customers might benefit from earlier service. Complete follow-up and a control are required before claiming avoided cost or recovered revenue.
+**Figures — customer continuity:** [branch activity partitions](figures/customer_branch_continuity.png) distinguish local absence from chain-wide non-observation; [complete follow-up](figures/customer_followup.png) contrasts observed return horizons and alternative cutoffs. Neither figure selects a profitable contact threshold.
 
-The same broad short-/long-horizon difference appears at alternative dates; it is not uniquely associated with war. [Follow-up evidence](customer_followup.csv).
+## Practical tests and supporting work
 
-## What these results do not establish
+Use the [pilot plans](../docs/pilot.md) for preparation, promotion holdout, and precisely timed customer contact. Measure total contribution after relevant incremental costs and retain assigned units/accounts in the analysis. No pilot or campaign has been run.
 
-- No overall identified-customer decline is observed in the main comparison; the active count increases.
-- No exact war/Ramadan/Lent effect or event-specific relocation is identified.
-- Missing IDs are not known to be random, and observed late return is not proof of an unprompted return.
-- The fixed cohort is an observed repeat-account definition, not a verified loyalty segment. Zero-visit members remain in its denominator.
-- Conditional economics do not establish actual uplift, contact savings, or full net profit.
-
-## Recommendation
-
-Build the submission around customer continuity during changing conditions: distinguish which accounts are active, where they are active, and over what time horizon before choosing a profit-oriented response. Present the breadth/frequency and cross-branch findings as the primary operational arguments, with delayed return strengthening the case for a better inactivity policy. Validate with the [customer-service plans](../docs/pilot.md). Earlier item/branch analyses are preserved in [supporting material](item_branch_memo.md), not used as the main story.
+Earlier [food-offer](food_offer_memo.md) and [item/branch](item_branch_memo.md) investigations are supporting material, not a change to the main three-part idea. The [executed notebook](../notebooks/stories_decision_analysis.ipynb) reproduces all three conclusions and embeds the promotion script for standalone use.

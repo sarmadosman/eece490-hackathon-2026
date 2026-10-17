@@ -1,15 +1,20 @@
-"""Harbour's two 15% Cold Coffee/Desserts promotions as a natural experiment.
+"""Harbour's two 15% Cold Coffee/Desserts waves: observational promotion comparison.
 
-Harbour ran the same promotion on March 12-19 (inside the war/Ramadan/Lent
-window) and May 12-19 (no calendar event). Garden and Uptown did not. For each
+Harbour recorded the same 15%-off pattern on March 12-19 (overlapping the
+supplied Ramadan/Lent periods) and May 12-19 (outside those periods and away
+from the March 2 onset). Garden and Uptown had no comparable recorded pattern. For each
 promotion, compare Harbour with the other branches during the promotion and in
 the 14 days on either side, then repeat the comparison for every non-promotion
-8-day window (placebo) to see how large a "lift" ordinary noise produces.
+8-day window to describe background relative variation. These overlapping
+comparisons are not independent experiments, a confidence interval, or a power
+test. Interpretation assumes comparable relative trends between branches; it
+does not identify the promotion-period counterfactual.
 
 Usage: python3 scripts/promotion_test.py [--data path/to/stories_transactions.csv]
 Writes reports/promotion_natural_experiment.csv and reports/promotion_placebo.csv.
 """
 import argparse
+import os
 from pathlib import Path
 
 import numpy as np
@@ -66,6 +71,48 @@ def relative_change(daily, start, metric):
     }
 
 
+def make_figure(result, placebo, output):
+    """Plot observed comparisons without treating the background as a null test."""
+    os.environ.setdefault("MPLCONFIGDIR", str(ROOT / ".cache" / "matplotlib"))
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+    starts = [start for start, _ in PROMOS]
+    positions = np.arange(len(starts))
+    for ax, metric, title in zip(
+        axes[:2], ["promo_cat_units", "promo_cat_gross_profit"],
+        ["Promoted-category units/day", "Promoted-category gross profit/day (USD)"],
+    ):
+        rows = result[result.metric == metric].set_index("promo_start").loc[starts]
+        for offset, period, color in [(-.25, "pre", "#64748b"), (0, "during", "#16877a"), (.25, "post", "#c58b47")]:
+            values = rows[f"harbour_{period}_per_day"]
+            bars = ax.bar(positions + offset, values, width=.24, color=color,
+                          label={"pre": "Before: 14 days", "during": "During: 8 days", "post": "After: 14 days"}[period])
+            ax.bar_label(bars, fmt="%.1f", padding=3, fontsize=7)
+        ax.set_xticks(positions, ["March 12–19", "May 12–19"])
+        ax.set_title(title, fontsize=10)
+        ax.margins(y=.18)
+    axes[0].legend(fontsize=7, loc="upper left")
+    axes[2].hist(placebo.harbour_vs_others_change_pct, bins=12, color="#94a3b8", edgecolor="white")
+    observed = result[result.metric == "promo_cat_units"]
+    for (_, row), color, label in zip(observed.iterrows(), ["#16877a", "#c58b47"], ["Observed March", "Observed May"]):
+        axes[2].axvline(row.harbour_vs_others_change_pct, color=color, lw=2,
+                        label=f"{label}: {row.harbour_vs_others_change_pct:+.1f}%")
+    axes[2].set(title="Overlapping background comparisons",
+                xlabel="Harbour/other branches relative change (%)", ylabel="Windows")
+    axes[2].legend(fontsize=7)
+    fig.suptitle("Observational promotion comparison: volume, contribution, and background variation", fontsize=12)
+    fig.text(.5, .015,
+        "Bars show recorded means, not causal effects. The 60 overlapping windows are descriptive variation, not a confidence interval or power test.",
+        ha="center", fontsize=8)
+    fig.tight_layout(rect=[0, .07, 1, .93])
+    output.mkdir(parents=True, exist_ok=True)
+    fig.savefig(output / "promotion_comparison.png", dpi=150)
+    plt.close(fig)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", default=ROOT / "data/raw/stories_transactions.csv")
@@ -105,8 +152,10 @@ def main():
     placebo = pd.DataFrame(placebo)
 
     out = ROOT / "reports"
+    out.mkdir(parents=True, exist_ok=True)
     result.to_csv(out / "promotion_natural_experiment.csv", index=False)
     placebo.to_csv(out / "promotion_placebo.csv", index=False)
+    make_figure(result, placebo, out / "figures")
 
     units_rows = result[result["metric"] == "promo_cat_units"]
     q = placebo["harbour_vs_others_change_pct"].quantile([0.025, 0.975])
@@ -114,8 +163,12 @@ def main():
     for _, r in units_rows.iterrows():
         print(f"{r.promo_start}: Harbour promoted units/day {r.harbour_pre_per_day:.1f} -> "
               f"{r.harbour_during_per_day:.1f}; relative to other branches {r.harbour_vs_others_change_pct:+.1f}%")
-    print(f"Placebo windows: n={len(placebo)}, 95% range {q.iloc[0]:+.1f}% to {q.iloc[1]:+.1f}%, "
-          f"max {placebo['harbour_vs_others_change_pct'].max():+.1f}%")
+    print(
+        f"Overlapping non-promotion comparisons: n={len(placebo)}, "
+        f"empirical central 95% range "
+        f"{q.iloc[0]:+.1f}% to {q.iloc[1]:+.1f}%. "
+        "Descriptive variation only; not a confidence interval or power test."
+    )
 
 
 if __name__ == "__main__":
