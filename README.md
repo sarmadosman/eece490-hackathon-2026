@@ -164,7 +164,8 @@ Evidence: [promotion_natural_experiment.csv](reports/promotion_natural_experimen
 
 | Assumption | Source | If wrong |
 |---|---|---|
-| War-context cutoff = **March 2, 2026** | Team context (not detected from the data) | The alternative cutoffs show the conclusions don't depend on this exact date |
+| War-context cutoff = **March 2, 2026** | Team context. During our ChatGPT research, web searches found UN and UNICEF reports dating the escalation in Lebanon to March 2, 2026. The date was not detected from the sales data | The alternative cutoffs show the conclusions don't depend on this exact date |
+| Branch names (Harbour, Garden, Uptown) don't tell us where the branches are or how exposed each was to the conflict | No location mapping was supplied | We make no claims about which branch was more affected by the war |
 | Ramadan **Feb 17–Mar 18**, Lent **Feb 18–Apr 2**, inclusive | Team-supplied calendar | Small shifts of a day or two change the phase table slightly but not the conclusions |
 | Calendar periods describe the calendar, not customers | Nobody's religion or fasting is known | We make no claims about who observes what |
 | Recorded unit cost is the right cost for gross profit | Data dictionary | Break-even lift and dollar values scale with true margins |
@@ -176,16 +177,50 @@ Evidence: [promotion_natural_experiment.csv](reports/promotion_natural_experimen
 ## 8. Approaches we considered and rejected
 
 - **Estimating "the cost of the war".** Without a comparison year or an unaffected branch, any such number would be invented. We quantified decisions instead.
-- **Complex ML forecasting.** About 60 days of history cannot support it. Simple weekday-based models were tested chronologically against even simpler rules, and the four-week weekday average is enough to make the decision.
-- **Making Garden's low margin the headline.** Garden's recorded margin (about 47% vs Harbour's 65%) is real but **stable in every phase** (46.8–47.2%), so it is not a response to the disruption. It is a separate cost-recording or procurement question ([same_product_economics.csv](reports/same_product_economics.csv): Garden's costs for the same products are about 43% higher).
+- **An ML model of "sales if there had been no war".** We proposed this early on. With about 60 days of pre-war history and no unaffected branch, a model cannot tell us what would have happened without the war. We kept a weaker but honest version: simple models trained only on pre-war data, each tested chronologically against simpler rules, and described as "earlier patterns continued", not "no war".
+- **Complex ML forecasting.** The same 60 days cannot support it. The four-week same-weekday average is enough for the preparation decision.
+- **Copying approaches from earlier hackathon repositories.** We reviewed six previous EECE490 submissions (see §9). The dashboards and classifiers there often had weak evaluation. One compared models on test sets that overlapped its training data by 80.8%. Another reported hard-coded accuracy figures. We took their workflow structure and avoided their claims.
+- **Making Garden's low margin the headline.** This was our first lead. Garden's recorded margin (about 47% vs Harbour's 65%; gross profit per order $4.19 vs $5.98) is real but **stable in every phase** (46.8–47.2%), so it is not a response to the disruption. It is a separate cost-recording or procurement question ([same_product_economics.csv](reports/same_product_economics.csv)): for the same products, Garden's recorded costs are about 43% higher and its prices about 4.8% lower. Matching Harbour's costs would add about $15,923 over six months, but that is a benchmark, not a saving Stories can count on.
 - **A Ramadan/Lent menu or hours redesign.** No evening or meal shift appears in the data, and the menu categories do not tell us what is suitable for fasting.
-- **Basket-pairing offers ("croissant with latte").** Past co-purchases cannot show whether a suggestion creates extra sales. That needs a randomised test, sketched in [docs/food_offer_pilot.md](docs/food_offer_pilot.md).
+- **Meal-plus-drink versus bakery-plus-drink bundles.** This was our main plan for a while (§9). Meals have the highest gross profit per unit ($5.46) but are rarely bought with drinks (2.4% of drink orders, vs 23.0% for bakery). Bakery would need about 2.2× as many genuinely extra purchases to match meals, or 3.1× with a $1 discount. Past co-purchases cannot show whether a suggestion creates extra sales. That needs a randomised test, sketched in [docs/food_offer_pilot.md](docs/food_offer_pilot.md), and Conclusion 2 is a reason to test normal-price suggestions before any bundle discount.
 - **A churn or lifetime-value model.** Coffee customers never cancel, so "churn" is never directly observed. Transparent cohort tracking answers the 28- versus 56-day question directly.
 - **A "chat with your sales data" dashboard.** The brief rules this out, and it would not support a decision.
 
+## 9. How we got here: project history
+
+We worked with AI assistants throughout: ChatGPT for exploration and framing, then Codex to build the reproducible pipeline, then Claude Code to re-check the work and write this README. We list the path, including the ideas we dropped, because the dead ends shaped the final conclusions. Every number in §4 was recomputed from the raw CSV in the final pass. Nothing is carried over from the AI sessions unchecked.
+
+**Stage 1: ChatGPT exploration** ([shared conversation](https://chatgpt.com/share/6ad35e6d-d08c-83eb-a1e8-26889dcb5a3f))
+
+| Step | What we did | What we learned | What it changed |
+|---|---|---|---|
+| 1. Checked the brief | Checked the PDF for hidden or embedded instructions | None found. The "No questions are allowed" line is a rule for the competition | We state our own assumptions instead of asking for clarification (§7) |
+| 2. Understood the data | Profiled the CSV: 51,177 lines, 33,887 orders, 45 products, 36.5% missing IDs, 132 exact duplicates, accounting checks to within a cent | Gross profit is revenue minus recorded product cost only, not net profit | Became the data-quality checks in §3 |
+| 3. First lead: Garden | Compared branches | Garden earns $4.19 gross profit per order vs Harbour's $5.98. Its costs for the same products are about 43% higher and its prices about 4.8% lower | Became a supporting finding. It is stable across phases, so it is not about change (§8) |
+| 4. Reviewed past submissions | Audited six earlier EECE490 hackathon repositories | Common failures: model comparisons on overlapping test sets (80.8% overlap in one), simulated or hard-coded accuracy figures, impact numbers taken from fixed rules | We adopted simple baselines, testing on unseen data, and scenarios kept separate from measurements |
+| 5. War idea | Proposed operating Stories through the war that began March 2 in Lebanon. Web searches found UN and UNICEF reports dating the escalation to March 2 | **There was no sales collapse.** Orders/day went from 164.7 to 179.6 (+9.1%), average ticket $9.02 → $9.01, takeaway share 41.0% → 40.6%. Against the pre-war trend and weekday pattern, the excess was only about +3.2% | Became the starting point of Conclusion 1 |
+| 6. EDA notebooks | Built two Colab notebooks: one with 9 charts (data quality, trends, weekday/hour heatmaps, branch margins, product contribution, alternative cutoffs) and one with before/after category scatters and branch heatmaps | Harbour Cold Coffee units were up 16.1%, but gross profit per unit fell 5.7% and the discounted share rose 24.2 points. The first assistant reply had already pointed to Harbour's 15% March/May discounts as "a promising promotion study" | Notebooks kept in `notebooks/reference/`. The discount lead became Conclusion 2 |
+| 7. Meal-plus-drink idea | Asked whether meals (highest profit per unit) could be paired with the most popular drinks | Meals: highest per-unit profit ($5.46) but lowest total contribution. Only 1.7–2.7% of drink orders include a meal. Bakery would need about 2.2× as many extra sales to match meals | Became our working plan: a Harbour pilot comparing normal service, a bakery suggestion and a meal suggestion |
+| 8. "If there were no war" ML model | Proposed predicting what sales would have been without the war | Reframed as "earlier patterns continued", using simple models trained only on pre-war data and tested chronologically | Became the forecast in Conclusion 1 |
+| 9. Course feedback | We were told we were "on the right track with the war idea" | We weighed keeping the war framing against making Garden's margin the main story | Kept the war/abrupt-change framing |
+
+**Stage 2: Codex build** (session `cx_6ad3798c…`; the share link is blocked by a bot check, so this stage is reconstructed from the repository it produced: `src/`, `tests/`, `docs/`, `reports/*_memo.md`)
+
+1. **Turned the notebooks into a reproducible pipeline.** It built the `src/stories/` package, 18 unit tests, a portable executed notebook ([notebooks/stories_decision_analysis.ipynb](notebooks/stories_decision_analysis.ipynb)), and re-ran the useful ChatGPT diagnostics from the raw CSV ([docs/notebook_integration.md](docs/notebook_integration.md)).
+2. **Food-offer analysis and pilot design** ([reports/food_offer_memo.md](reports/food_offer_memo.md), [docs/food_offer_pilot.md](docs/food_offer_pilot.md)): forecasts tested chronologically, plus break-even and discount-ceiling calculations for bakery and meal offers.
+3. **Restated the problem as "How can Stories apply changes to maximize profit in times of abrupt change?"** It then analysed item and branch economics around all five event boundaries ([reports/item_branch_memo.md](reports/item_branch_memo.md)).
+4. **Added Ramadan and Lent.** It split the period into phases, compared each boundary, and fitted calendar regressions with HAC errors across five specifications ([reports/calendar_decision_memo.md](reports/calendar_decision_memo.md)). This showed the three events cannot be separated.
+5. **Moved to customer-level patterns** after we asked for less obvious findings than Garden or discounts ([reports/decision_memo.md](reports/decision_memo.md), [docs/customer_methodology.md](docs/customer_methodology.md)). These became Conclusion 3.
+
+**Stage 3: final pass (Claude Code)**
+
+We re-checked every headline number from the raw data and re-ran the tests. We then turned the early discount lead into a proper natural experiment: Harbour against the other branches, a break-even test, and 60 placebo windows ([scripts/promotion_test.py](scripts/promotion_test.py)). Finally we brought everything together into three conclusions about change, with the playbook in this README.
+
+**What the path taught us:** each time we expected the shock to show up in sales (a demand collapse, an evening shift for Ramadan, a food shift for Lent, customers leaving), the data showed stability instead. The things that actually moved profit were Stories' own decisions, above all the discounts. That is why the playbook is mostly about **not over-reacting**.
+
 ---
 
-## 9. Repository guide
+## 10. Repository guide
 
 | Path | What it contains |
 |---|---|
@@ -197,8 +232,9 @@ Evidence: [promotion_natural_experiment.csv](reports/promotion_natural_experimen
 | `src/stories/business.py`, `diagnostics.py`, `scenario.py` | Item/branch economics, alternative cutoffs, same-product costs, scenario arithmetic |
 | `reports/*.csv`, `reports/figures/*.png` | Every number cited above |
 | `notebooks/stories_decision_analysis.ipynb` | Executed notebook covering the pipeline outputs |
-| `notebooks/reference/` | Original exploratory notebooks (EDA and before/after) |
-| `reports/*_memo.md`, `docs/*.md` | Earlier working memos and detailed method notes (supporting material) |
+| `notebooks/reference/` | The two Colab notebooks from the ChatGPT stage (`Stories_Coffee_EDA.ipynb`, `Stories_Coffee_Before_After.ipynb`), unmodified with saved outputs |
+| `reports/*_memo.md`, `docs/*.md` | Working memos from the Codex stage, in order: food offers → item/branch → calendar → customers (see §9), plus detailed method notes |
+| `docs/project_context.md` | Where each source came from, including the ChatGPT conversation |
 | `tests/` | 18 unit tests for the analysis code |
 
 **Key figures:** [calendar_timeline.png](reports/figures/calendar_timeline.png) (orders, evening share and GP/order across the calendar) · [promotions_and_cutoffs.png](reports/figures/promotions_and_cutoffs.png) (Harbour discount waves and alternative cutoffs) · [demand_projection.png](reports/figures/demand_projection.png) (pre-war forecast vs actual).
