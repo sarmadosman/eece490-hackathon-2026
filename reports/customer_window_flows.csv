@@ -1,0 +1,121 @@
+event,cutoff,days_each_side,branch,segment,customers,before_orders,after_orders,before_gross_profit,after_gross_profit,after_only_seen_earlier
+March 2 / war context,2026-03-02,14,All branches,Observed in both windows,461,573,568,2982.84,2986.1,
+March 2 / war context,2026-03-02,14,All branches,Observed only in before window,767,920,0,4894.18,0.0,
+March 2 / war context,2026-03-02,14,All branches,Observed only in after window,842,0,1054,0.0,5620.01,607.0
+March 2 / war context,2026-03-02,14,Garden,Observed in both windows,59,62,61,249.35,210.53000000000003,
+March 2 / war context,2026-03-02,14,Garden,Observed only in before window,411,438,0,1834.06,0.0,
+March 2 / war context,2026-03-02,14,Garden,Observed only in after window,433,0,468,0.0,1981.74,321.0
+March 2 / war context,2026-03-02,14,Harbour,Observed in both windows,141,159,154,946.98,920.25,
+March 2 / war context,2026-03-02,14,Harbour,Observed only in before window,514,564,0,3322.43,0.0,
+March 2 / war context,2026-03-02,14,Harbour,Observed only in after window,564,0,635,0.0,3739.6800000000003,409.0
+March 2 / war context,2026-03-02,14,Uptown,Observed in both windows,23,23,24,128.89,145.11,
+March 2 / war context,2026-03-02,14,Uptown,Observed only in before window,240,247,0,1395.31,0.0,
+March 2 / war context,2026-03-02,14,Uptown,Observed only in after window,270,0,280,0.0,1608.8,187.0
+March 2 / war context,2026-03-02,28,All branches,Observed in both windows,1204,1805,1837,9546.02,9484.439999999999,
+March 2 / war context,2026-03-02,28,All branches,Observed only in before window,774,1158,0,6088.93,0.0,
+March 2 / war context,2026-03-02,28,All branches,Observed only in after window,900,0,1351,0.0,7141.03,508.0
+March 2 / war context,2026-03-02,28,Garden,Observed in both windows,242,271,284,1119.1499999999999,1179.8300000000002,
+March 2 / war context,2026-03-02,28,Garden,Observed only in before window,622,703,0,2952.62,0.0,
+March 2 / war context,2026-03-02,28,Garden,Observed only in after window,666,0,766,0.0,3223.82,389.0
+March 2 / war context,2026-03-02,28,Harbour,Observed in both windows,405,501,496,3009.73,2873.33,
+March 2 / war context,2026-03-02,28,Harbour,Observed only in before window,761,935,0,5481.78,0.0,
+March 2 / war context,2026-03-02,28,Harbour,Observed only in after window,826,0,1033,0.0,5943.9,469.0
+March 2 / war context,2026-03-02,28,Uptown,Observed in both windows,81,87,89,497.93,522.29,
+March 2 / war context,2026-03-02,28,Uptown,Observed only in before window,426,466,0,2573.74,0.0,
+March 2 / war context,2026-03-02,28,Uptown,Observed only in after window,481,0,520,0.0,2882.3,268.0
+Ramadan start,2026-02-17,14,All branches,Observed in both windows,440,537,542,2836.39,2819.1800000000003,
+Ramadan start,2026-02-17,14,All branches,Observed only in before window,744,915,0,4771.370000000001,0.0,
+Ramadan start,2026-02-17,14,All branches,Observed only in after window,781,0,961,0.0,5158.860000000001,453.0
+Ramadan start,2026-02-17,14,Garden,Observed in both windows,55,60,59,255.58000000000004,224.54000000000002,
+Ramadan start,2026-02-17,14,Garden,Observed only in before window,386,414,0,1706.3400000000001,0.0,
+Ramadan start,2026-02-17,14,Garden,Observed only in after window,418,0,450,0.0,1892.2999999999997,257.0
+Ramadan start,2026-02-17,14,Harbour,Observed in both windows,132,149,144,875.99,834.76,
+Ramadan start,2026-02-17,14,Harbour,Observed only in before window,505,553,0,3270.71,0.0,
+Ramadan start,2026-02-17,14,Harbour,Observed only in after window,521,0,582,0.0,3468.13,307.0
+Ramadan start,2026-02-17,14,Uptown,Observed in both windows,26,27,26,150.69,156.24999999999997,
+Ramadan start,2026-02-17,14,Uptown,Observed only in before window,239,249,0,1348.4499999999998,0.0,
+Ramadan start,2026-02-17,14,Uptown,Observed only in after window,237,0,242,0.0,1402.06,133.0
+Ramadan start,2026-02-17,28,All branches,Observed in both windows,1139,1646,1747,8885.06,9263.130000000001,
+Ramadan start,2026-02-17,28,All branches,Observed only in before window,780,1143,0,5972.339999999999,0.0,
+Ramadan start,2026-02-17,28,All branches,Observed only in after window,936,0,1396,0.0,7405.719999999999,375.0
+Ramadan start,2026-02-17,28,Garden,Observed in both windows,208,236,238,989.6600000000001,1021.94,
+Ramadan start,2026-02-17,28,Garden,Observed only in before window,594,681,0,2856.55,0.0,
+Ramadan start,2026-02-17,28,Garden,Observed only in after window,698,0,797,0.0,3315.45,292.0
+Ramadan start,2026-02-17,28,Harbour,Observed in both windows,373,464,469,2853.81,2729.91,
+Ramadan start,2026-02-17,28,Harbour,Observed only in before window,726,869,0,5161.62,0.0,
+Ramadan start,2026-02-17,28,Harbour,Observed only in after window,859,0,1059,0.0,6295.799999999999,350.0
+Ramadan start,2026-02-17,28,Uptown,Observed in both windows,83,92,88,543.2,528.46,
+Ramadan start,2026-02-17,28,Uptown,Observed only in before window,416,447,0,2452.56,0.0,
+Ramadan start,2026-02-17,28,Uptown,Observed only in after window,457,0,492,0.0,2777.29,163.0
+Lent start,2026-02-18,14,All branches,Observed in both windows,434,525,536,2762.09,2794.55,
+Lent start,2026-02-18,14,All branches,Observed only in before window,743,928,0,4856.73,0.0,
+Lent start,2026-02-18,14,All branches,Observed only in after window,811,0,1018,0.0,5400.13,478.0
+Lent start,2026-02-18,14,Garden,Observed in both windows,54,58,57,251.05,218.13,
+Lent start,2026-02-18,14,Garden,Observed only in before window,386,415,0,1701.21,0.0,
+Lent start,2026-02-18,14,Garden,Observed only in after window,436,0,470,0.0,1952.29,272.0
+Lent start,2026-02-18,14,Harbour,Observed in both windows,128,140,138,848.78,814.5799999999999,
+Lent start,2026-02-18,14,Harbour,Observed only in before window,506,565,0,3345.39,0.0,
+Lent start,2026-02-18,14,Harbour,Observed only in after window,531,0,601,0.0,3530.73,313.0
+Lent start,2026-02-18,14,Uptown,Observed in both windows,23,24,23,131.42000000000002,151.69,
+Lent start,2026-02-18,14,Uptown,Observed only in before window,242,251,0,1340.97,0.0,
+Lent start,2026-02-18,14,Uptown,Observed only in after window,258,0,265,0.0,1527.2600000000002,149.0
+Lent start,2026-02-18,28,All branches,Observed in both windows,1128,1639,1748,8832.23,9251.17,
+Lent start,2026-02-18,28,All branches,Observed only in before window,800,1166,0,6156.030000000001,0.0,
+Lent start,2026-02-18,28,All branches,Observed only in after window,939,0,1414,0.0,7467.4,392.0
+Lent start,2026-02-18,28,Garden,Observed in both windows,206,229,240,976.02,1034.76,
+Lent start,2026-02-18,28,Garden,Observed only in before window,602,688,0,2865.04,0.0,
+Lent start,2026-02-18,28,Garden,Observed only in after window,697,0,800,0.0,3352.16,309.0
+Lent start,2026-02-18,28,Harbour,Observed in both windows,379,469,476,2909.74,2733.63,
+Lent start,2026-02-18,28,Harbour,Observed only in before window,736,885,0,5278.1900000000005,0.0,
+Lent start,2026-02-18,28,Harbour,Observed only in after window,844,0,1049,0.0,6170.280000000001,362.0
+Lent start,2026-02-18,28,Uptown,Observed in both windows,84,92,89,532.2299999999999,540.3,
+Lent start,2026-02-18,28,Uptown,Observed only in before window,410,442,0,2427.04,0.0,
+Lent start,2026-02-18,28,Uptown,Observed only in after window,466,0,508,0.0,2887.4400000000005,176.0
+Ramadan end,2026-03-19,14,All branches,Observed in both windows,458,569,576,2962.53,3025.64,
+Ramadan end,2026-03-19,14,All branches,Observed only in before window,821,1026,0,5410.26,0.0,
+Ramadan end,2026-03-19,14,All branches,Observed only in after window,811,0,1015,0.0,5294.4,684.0
+Ramadan end,2026-03-19,14,Garden,Observed in both windows,78,83,85,332.15,340.88,
+Ramadan end,2026-03-19,14,Garden,Observed only in before window,400,435,0,1869.56,0.0,
+Ramadan end,2026-03-19,14,Garden,Observed only in after window,432,0,458,0.0,1969.07,358.0
+Ramadan end,2026-03-19,14,Harbour,Observed in both windows,140,160,151,912.8199999999999,862.8899999999999,
+Ramadan end,2026-03-19,14,Harbour,Observed only in before window,545,612,0,3541.16,0.0,
+Ramadan end,2026-03-19,14,Harbour,Observed only in after window,522,0,587,0.0,3458.54,435.0
+Ramadan end,2026-03-19,14,Uptown,Observed in both windows,21,23,23,146.92,134.94,
+Ramadan end,2026-03-19,14,Uptown,Observed only in before window,270,282,0,1570.1799999999998,0.0,
+Ramadan end,2026-03-19,14,Uptown,Observed only in after window,278,0,287,0.0,1553.72,245.0
+Ramadan end,2026-03-19,28,All branches,Observed in both windows,1271,1933,1934,10122.460000000001,10234.470000000001,
+Ramadan end,2026-03-19,28,All branches,Observed only in before window,798,1227,0,6419.91,0.0,
+Ramadan end,2026-03-19,28,All branches,Observed only in after window,877,0,1342,0.0,7049.08,650.0
+Ramadan end,2026-03-19,28,Garden,Observed in both windows,253,303,296,1277.7,1299.92,
+Ramadan end,2026-03-19,28,Garden,Observed only in before window,647,737,0,3078.4,0.0,
+Ramadan end,2026-03-19,28,Garden,Observed only in after window,685,0,793,0.0,3339.5,498.0
+Ramadan end,2026-03-19,28,Harbour,Observed in both windows,429,537,532,3120.1499999999996,3157.8599999999997,
+Ramadan end,2026-03-19,28,Harbour,Observed only in before window,796,991,0,5719.2,0.0,
+Ramadan end,2026-03-19,28,Harbour,Observed only in after window,828,0,1005,0.0,6010.530000000001,610.0
+Ramadan end,2026-03-19,28,Uptown,Observed in both windows,88,94,97,548.1000000000001,497.6,
+Ramadan end,2026-03-19,28,Uptown,Observed only in before window,455,498,0,2798.8199999999997,0.0,
+Ramadan end,2026-03-19,28,Uptown,Observed only in after window,506,0,553,0.0,2978.14,387.0
+Lent end,2026-04-03,14,All branches,Observed in both windows,466,591,595,3093.2,3167.9300000000003,
+Lent end,2026-04-03,14,All branches,Observed only in before window,810,1008,0,5340.19,0.0,
+Lent end,2026-04-03,14,All branches,Observed only in after window,871,0,1096,0.0,5759.22,776.0
+Lent end,2026-04-03,14,Garden,Observed in both windows,69,74,80,320.59999999999997,352.5,
+Lent end,2026-04-03,14,Garden,Observed only in before window,440,466,0,1966.13,0.0,
+Lent end,2026-04-03,14,Garden,Observed only in after window,437,0,478,0.0,2013.8700000000001,388.0
+Lent end,2026-04-03,14,Harbour,Observed in both windows,125,139,144,775.6100000000001,881.25,
+Lent end,2026-04-03,14,Harbour,Observed only in before window,537,601,0,3625.08,0.0,
+Lent end,2026-04-03,14,Harbour,Observed only in after window,595,0,657,0.0,3929.03,534.0
+Lent end,2026-04-03,14,Uptown,Observed in both windows,27,29,28,173.37,157.33,
+Lent end,2026-04-03,14,Uptown,Observed only in before window,277,290,0,1572.6000000000001,0.0,
+Lent end,2026-04-03,14,Uptown,Observed only in after window,289,0,304,0.0,1593.1699999999998,254.0
+Lent end,2026-04-03,28,All branches,Observed in both windows,1285,1948,2030,10147.0,10809.24,
+Lent end,2026-04-03,28,All branches,Observed only in before window,810,1232,0,6542.530000000001,0.0,
+Lent end,2026-04-03,28,All branches,Observed only in after window,902,0,1377,0.0,7293.200000000001,758.0
+Lent end,2026-04-03,28,Garden,Observed in both windows,254,294,305,1229.52,1296.9700000000003,
+Lent end,2026-04-03,28,Garden,Observed only in before window,658,761,0,3239.96,0.0,
+Lent end,2026-04-03,28,Garden,Observed only in after window,715,0,820,0.0,3439.81,597.0
+Lent end,2026-04-03,28,Harbour,Observed in both windows,414,512,530,2936.0600000000004,3191.17,
+Lent end,2026-04-03,28,Harbour,Observed only in before window,792,993,0,5864.57,0.0,
+Lent end,2026-04-03,28,Harbour,Observed only in after window,891,0,1109,0.0,6720.219999999999,763.0
+Lent end,2026-04-03,28,Uptown,Observed in both windows,91,100,96,547.89,514.72,
+Lent end,2026-04-03,28,Uptown,Observed only in before window,479,520,0,2871.53,0.0,
+Lent end,2026-04-03,28,Uptown,Observed only in after window,509,0,547,0.0,2939.55,428.0

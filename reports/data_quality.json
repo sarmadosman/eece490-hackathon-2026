@@ -1,0 +1,15 @@
+{
+  "source_sha256": "f1672e728c28295b2b802d878fd38a158ba039827b429355e8438ee0463237a1",
+  "rows": 51177,
+  "transactions": 33887,
+  "products": 45,
+  "date_min": "2026-01-01",
+  "date_max": "2026-06-30",
+  "exact_duplicate_rows_beyond_first": 132,
+  "missing_customer_fraction_orders": 0.36453507244666095,
+  "max_revenue_formula_error_usd": 0.005000000000000782,
+  "max_gross_profit_formula_error_usd": 2.6645352591003757e-15,
+  "revenue_formula_errors_over_one_cent": 0,
+  "gross_profit_formula_errors_over_one_cent": 0,
+  "duplicate_policy": "Retain all rows; export errors versus valid repeated lines are unknown. Repeat key results after exact deduplication."
+}

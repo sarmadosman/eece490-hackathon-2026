@@ -1,0 +1,7 @@
+pattern,scenario,baseline_window,conditional_contribution_usd,assumptions
+2,Close 10% of recorded Garden cost gap,March 2–29,235.614,"Same product quantities, prices, discounts; Harbour cost comparable and partial gap closure attainable; before implementation costs"
+2,Close 25% of recorded Garden cost gap,March 2–29,589.035,"Same product quantities, prices, discounts; Harbour cost comparable and partial gap closure attainable; before implementation costs"
+2,Close 50% of recorded Garden cost gap,March 2–29,1178.07,"Same product quantities, prices, discounts; Harbour cost comparable and partial gap closure attainable; before implementation costs"
+3,"10 genuinely additional Quinoa Bowls, 3 extra wasted units","Illustrative pilot, not a measured time horizon",35.840000000000046,Full recorded list price; $0.25 extra operating cost/addition; $20 setup; no displaced purchases; waste at recorded unit cost
+3,"20 genuinely additional Quinoa Bowls, 5 extra wasted units","Illustrative pilot, not a measured time horizon",96.60000000000008,Full recorded list price; $0.25 extra operating cost/addition; $20 setup; no displaced purchases; waste at recorded unit cost
+3,"30 genuinely additional Quinoa Bowls, 8 extra wasted units","Illustrative pilot, not a measured time horizon",152.44000000000014,Full recorded list price; $0.25 extra operating cost/addition; $20 setup; no displaced purchases; waste at recorded unit cost

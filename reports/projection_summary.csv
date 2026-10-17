@@ -1,0 +1,4 @@
+branch,model,actual_orders,projected_orders,deviation_fraction
+Garden,trend_weekday,1640,1676.7632058287777,-0.021925102901221294
+Harbour,recent_weekday_average,2419,2192.0,0.10355839416058399
+Uptown,trend_weekday,971,901.7213114754088,0.07682937914735155

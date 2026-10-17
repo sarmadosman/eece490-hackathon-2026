@@ -1,0 +1,481 @@
+branch,specification,metric,term,association,ci_lower,ci_upper,unit,n_days,causal
+All branches,through_April_linear,orders,ramadan,2.3526099645793788,-5.069319801414692,10.35480568185618,percent,120,False
+All branches,through_April_linear,orders,lent,-1.5532127895153947,-8.593354506888685,6.029160787842683,percent,120,False
+All branches,through_April_linear,orders,post_march2,5.058148203350532,-1.8407942967325592,12.4419704177554,percent,120,False
+All branches,through_April_linear,evening_share,ramadan,-0.5221267308921304,-2.015958104129885,0.9717046423456243,percentage points,120,False
+All branches,through_April_linear,evening_share,lent,0.5115942849260126,-0.9942049511964682,2.017393521048493,percentage points,120,False
+All branches,through_April_linear,evening_share,post_march2,-0.031010474905206198,-2.165362347960975,2.1033413981505626,percentage points,120,False
+All branches,through_April_linear,midday_share,ramadan,1.3354026250308755,-0.11058255635012504,2.781387806411876,percentage points,120,False
+All branches,through_April_linear,midday_share,lent,-1.3097821370895026,-3.31531134317306,0.6957470689940548,percentage points,120,False
+All branches,through_April_linear,midday_share,post_march2,1.7461660144474187,-0.6883027747360958,4.180634803630933,percentage points,120,False
+All branches,through_April_linear,gross_profit_per_order,ramadan,-0.01750659843809904,-0.14071515938136792,0.10570196250516985,USD/order,120,False
+All branches,through_April_linear,gross_profit_per_order,lent,0.018849748720904946,-0.134570740093058,0.1722702375348679,USD/order,120,False
+All branches,through_April_linear,gross_profit_per_order,post_march2,-0.015273937460339226,-0.23794263723633222,0.20739476231565376,USD/order,120,False
+All branches,through_April_linear,bakery_attachment,ramadan,-1.1903296273184358,-3.61746868413437,1.236809429497499,percentage points,120,False
+All branches,through_April_linear,bakery_attachment,lent,1.2924709211457814,-1.2942212187667455,3.8791630610583083,percentage points,120,False
+All branches,through_April_linear,bakery_attachment,post_march2,-2.321068930548841,-5.1471240405866,0.5049861794889174,percentage points,120,False
+All branches,through_April_linear,meal_attachment,ramadan,0.14157235131403806,-0.4424920838278521,0.7256367864559282,percentage points,120,False
+All branches,through_April_linear,meal_attachment,lent,-0.36586712505858066,-1.0605400980002408,0.3288058478830796,percentage points,120,False
+All branches,through_April_linear,meal_attachment,post_march2,0.2766426379277465,-0.5223734403110118,1.0756587161665048,percentage points,120,False
+All branches,through_April_linear,breakfast_share,ramadan,0.1769155234239149,-1.235877601872898,1.589708648720728,percentage points,120,False
+All branches,through_April_linear,breakfast_share,lent,-0.4180317612176936,-1.441898961634042,0.6058354391986547,percentage points,120,False
+All branches,through_April_linear,breakfast_share,post_march2,0.04051193501278479,-1.8804834983354775,1.9615073683610473,percentage points,120,False
+All branches,through_April_linear,discounted_unit_share,ramadan,1.7988371285366762,-1.500774649802162,5.0984489068755146,percentage points,120,False
+All branches,through_April_linear,discounted_unit_share,lent,-0.3646725033033941,-2.048042649455506,1.3186976428487178,percentage points,120,False
+All branches,through_April_linear,discounted_unit_share,post_march2,3.5343723456847207,-1.2367274494716043,8.305472140841045,percentage points,120,False
+All branches,through_April_quadratic,orders,ramadan,1.7473491857399672,-6.009843198175568,10.144757904307996,percent,120,False
+All branches,through_April_quadratic,orders,lent,-3.7156083074123156,-11.072585492281457,4.250012607832988,percent,120,False
+All branches,through_April_quadratic,orders,post_march2,6.578159029111648,0.1377700433487207,13.432763452965323,percent,120,False
+All branches,through_April_quadratic,evening_share,ramadan,-0.6282688383737449,-2.1645229446570853,0.9079852679095952,percentage points,120,False
+All branches,through_April_quadratic,evening_share,lent,0.11412432582117923,-1.5953587850511246,1.8236074366934831,percentage points,120,False
+All branches,through_April_quadratic,evening_share,post_march2,0.2260591669103737,-1.725255351156221,2.1773736849769683,percentage points,120,False
+All branches,through_April_quadratic,midday_share,ramadan,1.7597159929583734,0.2604827089359505,3.2589492769807964,percentage points,120,False
+All branches,through_April_quadratic,midday_share,lent,0.2791425696009991,-1.7064188803883475,2.264704019590346,percentage points,120,False
+All branches,through_April_quadratic,midday_share,post_march2,0.7185051916251888,-1.590864256889291,3.0278746401396686,percentage points,120,False
+All branches,through_April_quadratic,gross_profit_per_order,ramadan,-0.01973216638510683,-0.1400289923674191,0.10056465959720542,USD/order,120,False
+All branches,through_April_quadratic,gross_profit_per_order,lent,0.01051567262357428,-0.18462122887448795,0.2056525741216365,USD/order,120,False
+All branches,through_April_quadratic,gross_profit_per_order,post_march2,-0.009883749074705073,-0.25646768368524425,0.2367001855358341,USD/order,120,False
+All branches,through_April_quadratic,bakery_attachment,ramadan,-1.4174754210524831,-3.9672703928134947,1.1323195507085284,percentage points,120,False
+All branches,through_April_quadratic,bakery_attachment,lent,0.441878903628809,-2.2900060715472086,3.1737638788048264,percentage points,120,False
+All branches,through_April_quadratic,bakery_attachment,post_march2,-1.7709358191893925,-4.6925782049571625,1.150706566578377,percentage points,120,False
+All branches,through_April_quadratic,meal_attachment,ramadan,0.052079857504087626,-0.565464325546682,0.6696240405548572,percentage points,120,False
+All branches,through_April_quadratic,meal_attachment,lent,-0.7009893371456588,-1.4802186904745804,0.07824001618326279,percentage points,120,False
+All branches,through_April_quadratic,meal_attachment,post_march2,0.49338794169782707,-0.26467173213634304,1.2514476155319971,percentage points,120,False
+All branches,through_April_quadratic,breakfast_share,ramadan,0.13397726136305163,-1.2514449151850051,1.5193994379111082,percentage points,120,False
+All branches,through_April_quadratic,breakfast_share,lent,-0.578822513071928,-2.1309747781631647,0.9733297520193087,percentage points,120,False
+All branches,through_April_quadratic,breakfast_share,post_march2,0.14450575904797636,-1.771039270788488,2.0600507888844404,percentage points,120,False
+All branches,through_April_quadratic,discounted_unit_share,ramadan,1.7082353305061617,-1.4977767673545332,4.914247428366856,percentage points,120,False
+All branches,through_April_quadratic,discounted_unit_share,lent,-0.7039487228211355,-2.656182361944886,1.248284916302615,percentage points,120,False
+All branches,through_April_quadratic,discounted_unit_share,post_march2,3.7538043159005037,-1.5157301258831337,9.02333875768414,percentage points,120,False
+All branches,through_June_linear,orders,ramadan,2.4078937098842417,-5.02082598800893,10.41764474358266,percent,181,False
+All branches,through_June_linear,orders,lent,-1.9461812383739083,-8.958695613204819,5.60647651630452,percent,181,False
+All branches,through_June_linear,orders,post_march2,3.7798227833122104,-1.8689611264016772,9.753771493326886,percent,181,False
+All branches,through_June_linear,evening_share,ramadan,-0.5239944238159245,-2.0443612680548866,0.9963724204230378,percentage points,181,False
+All branches,through_June_linear,evening_share,lent,0.5133894822876678,-1.0017189923109404,2.028497956886276,percentage points,181,False
+All branches,through_June_linear,evening_share,post_march2,0.9958063616594983,-0.6373657602162294,2.628978483535226,percentage points,181,False
+All branches,through_June_linear,midday_share,ramadan,1.3437018624728272,-0.03259524125481927,2.7199989662004738,percentage points,181,False
+All branches,through_June_linear,midday_share,lent,-1.2445969042821456,-3.0146924436665343,0.5254986351022429,percentage points,181,False
+All branches,through_June_linear,midday_share,post_march2,0.9840963894521009,-1.0439002202730032,3.012092999177205,percentage points,181,False
+All branches,through_June_linear,gross_profit_per_order,ramadan,-0.025350945823181537,-0.14622829163236156,0.09552639998599849,USD/order,181,False
+All branches,through_June_linear,gross_profit_per_order,lent,0.03634383040146316,-0.10235199121948499,0.1750396520224113,USD/order,181,False
+All branches,through_June_linear,gross_profit_per_order,post_march2,-0.04884697006725039,-0.2359065035145202,0.13821256338001942,USD/order,181,False
+All branches,through_June_linear,bakery_attachment,ramadan,-1.2371755329117597,-3.6235534971160797,1.1492024312925604,percentage points,181,False
+All branches,through_June_linear,bakery_attachment,lent,1.6152617335121215,-0.8372947048727837,4.067818171897026,percentage points,181,False
+All branches,through_June_linear,bakery_attachment,post_march2,-1.6901124651431227,-4.174430569401718,0.7942056391154723,percentage points,181,False
+All branches,through_June_linear,meal_attachment,ramadan,0.12408443648331599,-0.4501110500968901,0.698279923063522,percentage points,181,False
+All branches,through_June_linear,meal_attachment,lent,-0.28844373856097194,-0.9643756627475177,0.38748818562557386,percentage points,181,False
+All branches,through_June_linear,meal_attachment,post_march2,0.59281185489233,-0.23532607006992115,1.4209497798545812,percentage points,181,False
+All branches,through_June_linear,breakfast_share,ramadan,0.21229979442932656,-1.1468921357552984,1.5714917246139517,percentage points,181,False
+All branches,through_June_linear,breakfast_share,lent,-0.5529967715980562,-1.4981467175503649,0.3921531743542527,percentage points,181,False
+All branches,through_June_linear,breakfast_share,post_march2,-0.058007475018301106,-1.576774793140845,1.4607598431042428,percentage points,181,False
+All branches,through_June_linear,discounted_unit_share,ramadan,1.9419084972072467,-1.2366435820285717,5.120460576443065,percentage points,181,False
+All branches,through_June_linear,discounted_unit_share,lent,-1.0312205774845016,-3.176558246045441,1.1141170910764375,percentage points,181,False
+All branches,through_June_linear,discounted_unit_share,post_march2,2.952625295069365,-0.5556973200497084,6.460947910188438,percentage points,181,False
+All branches,through_June_quadratic,orders,ramadan,2.414237301359486,-5.113622774908367,10.53932407112241,percent,181,False
+All branches,through_June_quadratic,orders,lent,-1.9341318099417304,-9.045368573945979,5.733093005697235,percent,181,False
+All branches,through_June_quadratic,orders,post_march2,3.824442808370865,-2.9396912528772896,11.059969452118855,percent,181,False
+All branches,through_June_quadratic,evening_share,ramadan,-0.6421182324601565,-2.0875480825292123,0.803311617608899,percentage points,181,False
+All branches,through_June_quadratic,evening_share,lent,0.2790613826557599,-1.1084642622032987,1.6665870275148185,percentage points,181,False
+All branches,through_June_quadratic,evening_share,post_march2,0.1760729089951077,-1.8615961951942057,2.213742013184421,percentage points,181,False
+All branches,through_June_quadratic,midday_share,ramadan,1.4992097163774087,0.21519882587358458,2.783220606881233,percentage points,181,False
+All branches,through_June_quadratic,midday_share,lent,-0.9361082066898825,-2.6629007946292615,0.7906843812494969,percentage points,181,False
+All branches,through_June_quadratic,midday_share,post_march2,2.0632606278962915,-0.15256597073202427,4.279087226524607,percentage points,181,False
+All branches,through_June_quadratic,gross_profit_per_order,ramadan,-0.021975049350789366,-0.13976820373000032,0.09581810502842159,USD/order,181,False
+All branches,through_June_quadratic,gross_profit_per_order,lent,0.04304076486378072,-0.10000837549719496,0.1860899052247564,USD/order,181,False
+All branches,through_June_quadratic,gross_profit_per_order,post_march2,-0.0254195568902002,-0.2248997596939,0.1740606459134996,USD/order,181,False
+All branches,through_June_quadratic,bakery_attachment,ramadan,-1.3327323980193806,-3.679036801084857,1.0135720050460955,percentage points,181,False
+All branches,through_June_quadratic,bakery_attachment,lent,1.4257008070193886,-1.0742056507295883,3.9256072647683653,percentage points,181,False
+All branches,through_June_quadratic,bakery_attachment,post_march2,-2.3532400755674012,-4.957764527255656,0.2512843761208534,percentage points,181,False
+All branches,through_June_quadratic,meal_attachment,ramadan,0.07499536799782397,-0.49401392096505936,0.6440046569607073,percentage points,181,False
+All branches,through_June_quadratic,meal_attachment,lent,-0.3858241757728407,-1.1216024779699005,0.34995412642421914,percentage points,181,False
+All branches,through_June_quadratic,meal_attachment,post_march2,0.25215274425615647,-0.4961865832202846,1.0004920717325976,percentage points,181,False
+All branches,through_June_quadratic,breakfast_share,ramadan,0.20442477578287918,-1.1756904027213169,1.584539954287075,percentage points,181,False
+All branches,through_June_quadratic,breakfast_share,lent,-0.568618839453537,-1.588407337322511,0.45116965841543716,percentage points,181,False
+All branches,through_June_quadratic,breakfast_share,post_march2,-0.11265705243151815,-1.9308015556898528,1.7054874508268165,percentage points,181,False
+All branches,through_June_quadratic,discounted_unit_share,ramadan,1.9451051491310074,-1.3270132400376506,5.217223538299665,percentage points,181,False
+All branches,through_June_quadratic,discounted_unit_share,lent,-1.0248792193867933,-3.362812784593587,1.3130543458200004,percentage points,181,False
+All branches,through_June_quadratic,discounted_unit_share,post_march2,2.974808820545801,-1.069772928407911,7.019390569499513,percentage points,181,False
+All branches,through_June_post_slope,orders,ramadan,2.1478725948938235,-5.610208951109222,10.543606037416671,percent,181,False
+All branches,through_June_post_slope,orders,lent,-2.298650212281145,-9.632893746190879,5.630844519156333,percent,181,False
+All branches,through_June_post_slope,orders,post_march2,3.386254655374484,-2.9459117577448115,10.131554942703719,percent,181,False
+All branches,through_June_post_slope,evening_share,ramadan,-0.862822691221186,-2.472413678831676,0.7467682963893039,percentage points,181,False
+All branches,through_June_post_slope,evening_share,lent,0.03344540428072071,-1.4092549687232057,1.4761457772846471,percentage points,181,False
+All branches,through_June_post_slope,evening_share,post_march2,0.4894173049280186,-1.441395525815392,2.4202301356714293,percentage points,181,False
+All branches,through_June_post_slope,midday_share,ramadan,1.8925868782917152,0.4983452613071355,3.286828495276295,percentage points,181,False
+All branches,through_June_post_slope,midday_share,lent,-0.46711126276111437,-2.269960027235279,1.3357375017130504,percentage points,181,False
+All branches,through_June_post_slope,midday_share,post_march2,1.8044215870607803,-0.25907681448483316,3.867919988606394,percentage points,181,False
+All branches,through_June_post_slope,gross_profit_per_order,ramadan,-0.019390783868923817,-0.13777571224687507,0.09899414450902745,USD/order,181,False
+All branches,through_June_post_slope,gross_profit_per_order,lent,0.044786291403359796,-0.11182707003476333,0.20139965284148292,USD/order,181,False
+All branches,through_June_post_slope,gross_profit_per_order,post_march2,-0.03993932840824793,-0.229046713531414,0.14916805671491815,USD/order,181,False
+All branches,through_June_post_slope,bakery_attachment,ramadan,-1.6084894225610713,-4.030639351659042,0.8136605065369,percentage points,181,False
+All branches,through_June_post_slope,bakery_attachment,lent,1.089302362460692,-1.4624348950755501,3.6410396199969344,percentage points,181,False
+All branches,through_June_post_slope,bakery_attachment,post_march2,-2.2450522633209817,-4.678069465647691,0.18796493900572786,percentage points,181,False
+All branches,through_June_post_slope,meal_attachment,ramadan,-0.0473425916531222,-0.6317982767610953,0.5371130934548509,percentage points,181,False
+All branches,through_June_post_slope,meal_attachment,lent,-0.5312670059184468,-1.3535470202034467,0.29101300836655297,percentage points,181,False
+All branches,through_June_post_slope,meal_attachment,post_march2,0.33660899513365766,-0.39698951645843716,1.0702075067257524,percentage points,181,False
+All branches,through_June_post_slope,breakfast_share,ramadan,0.23919859015701936,-1.175042990893279,1.653440171207318,percentage points,181,False
+All branches,through_June_post_slope,breakfast_share,lent,-0.5148951166980957,-1.7002616453964872,0.6704714120002956,percentage points,181,False
+All branches,through_June_post_slope,breakfast_share,post_march2,-0.017806414167986263,-1.7061640697683678,1.6705512414323955,percentage points,181,False
+All branches,through_June_post_slope,discounted_unit_share,ramadan,2.150866612446589,-1.2479774504753336,5.5497106753685115,percentage points,181,False
+All branches,through_June_post_slope,discounted_unit_share,lent,-0.7352352078793468,-3.09641084808395,1.6259404323252562,percentage points,181,False
+All branches,through_June_post_slope,discounted_unit_share,post_march2,3.2649194955585394,-0.4284577465464179,6.958296737663497,percentage points,181,False
+Garden,through_April_linear,orders,ramadan,0.5283465228000204,-6.872111161210191,8.516885549743181,percent,120,False
+Garden,through_April_linear,orders,lent,0.8688972567058741,-6.7651284991152805,9.127993314039566,percent,120,False
+Garden,through_April_linear,orders,post_march2,-1.2313862839598237,-8.691234944176514,6.8379256846184955,percent,120,False
+Garden,through_April_linear,evening_share,ramadan,-2.0979556311185767,-5.916268284123799,1.7203570218866453,percentage points,120,False
+Garden,through_April_linear,evening_share,lent,1.4036295049150205,-1.9585550292484555,4.765814039078496,percentage points,120,False
+Garden,through_April_linear,evening_share,post_march2,-1.902125838864523,-6.924859487198802,3.120607809469756,percentage points,120,False
+Garden,through_April_linear,midday_share,ramadan,3.3960872293990265,0.02510348384490088,6.7670709749531515,percentage points,120,False
+Garden,through_April_linear,midday_share,lent,-2.236073499425042,-6.135537297818643,1.6633902989685596,percentage points,120,False
+Garden,through_April_linear,midday_share,post_march2,3.168777522067101,-1.0326904635701697,7.370245507704372,percentage points,120,False
+Garden,through_April_linear,gross_profit_per_order,ramadan,-0.07059824414099389,-0.19296415587710783,0.051767667595120054,USD/order,120,False
+Garden,through_April_linear,gross_profit_per_order,lent,0.07543198008547289,-0.055082499416078706,0.20594645958702448,USD/order,120,False
+Garden,through_April_linear,gross_profit_per_order,post_march2,0.13388494382648314,-0.01853598889432259,0.2863058765472889,USD/order,120,False
+Garden,through_April_linear,bakery_attachment,ramadan,-1.8430798071061312,-4.224274950843896,0.5381153366316338,percentage points,120,False
+Garden,through_April_linear,bakery_attachment,lent,0.8474400618546868,-1.585390023332673,3.2802701470420463,percentage points,120,False
+Garden,through_April_linear,bakery_attachment,post_march2,1.8483798810949366,-2.4717555768410335,6.168515339030907,percentage points,120,False
+Garden,through_April_linear,meal_attachment,ramadan,0.7074437824153396,-1.480552649060554,2.895440213891233,percentage points,120,False
+Garden,through_April_linear,meal_attachment,lent,-0.4720266950416456,-2.4783787021237744,1.5343253120404832,percentage points,120,False
+Garden,through_April_linear,meal_attachment,post_march2,1.3554638751426287,-0.5162295451125047,3.227157295397762,percentage points,120,False
+Garden,through_April_linear,breakfast_share,ramadan,0.2008670694840171,-1.7625932668642252,2.16432740583226,percentage points,120,False
+Garden,through_April_linear,breakfast_share,lent,-0.6807922204440003,-2.230331921546603,0.8687474806586024,percentage points,120,False
+Garden,through_April_linear,breakfast_share,post_march2,0.032195569537941865,-2.890517828784561,2.954908967860445,percentage points,120,False
+Garden,through_April_linear,discounted_unit_share,ramadan,-0.21309478099196974,-0.9641891299566542,0.5379995679727146,percentage points,120,False
+Garden,through_April_linear,discounted_unit_share,lent,-0.29490386313797423,-1.055040523190925,0.46523279691497654,percentage points,120,False
+Garden,through_April_linear,discounted_unit_share,post_march2,0.3976413184417762,-1.2598368496959202,2.055119486579473,percentage points,120,False
+Garden,through_April_quadratic,orders,ramadan,0.009160023440456055,-7.808801787717906,8.490097564017072,percent,120,False
+Garden,through_April_quadratic,orders,lent,-1.0680998184672559,-9.224942632059578,7.821698573615849,percent,120,False
+Garden,through_April_quadratic,orders,post_march2,0.015040620864765491,-7.3780289929148495,7.998223765158759,percent,120,False
+Garden,through_April_quadratic,evening_share,ramadan,-2.438328580261702,-6.432301638848167,1.5556444783247625,percentage points,120,False
+Garden,through_April_quadratic,evening_share,lent,0.12903617540420026,-3.753245558571722,4.011317909380123,percentage points,120,False
+Garden,through_April_quadratic,evening_share,post_march2,-1.0777635363252693,-6.0414308008610655,3.885903728210527,percentage points,120,False
+Garden,through_April_quadratic,midday_share,ramadan,4.3387163560002255,0.6557321983859652,8.021700513614487,percentage points,120,False
+Garden,through_April_quadratic,midday_share,lent,1.2937863204962257,-2.3393740262958844,4.926946667288336,percentage points,120,False
+Garden,through_April_quadratic,midday_share,post_march2,0.88578788025897,-2.7169184510559012,4.488494211573841,percentage points,120,False
+Garden,through_April_quadratic,gross_profit_per_order,ramadan,-0.08141924090441716,-0.20327752736353588,0.040439045554701555,USD/order,120,False
+Garden,through_April_quadratic,gross_profit_per_order,lent,0.03491063334496125,-0.12542491288391328,0.19524617957383578,USD/order,120,False
+Garden,through_April_quadratic,gross_profit_per_order,post_march2,0.1600927309908975,-0.003969838490560845,0.32415530047235586,USD/order,120,False
+Garden,through_April_quadratic,bakery_attachment,ramadan,-1.9080666481098039,-4.5546934068256,0.7385601106059924,percentage points,120,False
+Garden,through_April_quadratic,bakery_attachment,lent,0.6040840776092109,-2.913891563241169,4.122059718459591,percentage points,120,False
+Garden,through_April_quadratic,bakery_attachment,post_march2,2.0057740042748278,-2.8480462704493883,6.859594278999044,percentage points,120,False
+Garden,through_April_quadratic,meal_attachment,ramadan,0.4467683209291857,-1.604794713880934,2.4983313557393054,percentage points,120,False
+Garden,through_April_quadratic,meal_attachment,lent,-1.4481771359442779,-3.4139619942445307,0.5176077223559749,percentage points,120,False
+Garden,through_April_quadratic,meal_attachment,post_march2,1.9868037750587864,0.29681295000191893,3.676794600115654,percentage points,120,False
+Garden,through_April_quadratic,breakfast_share,ramadan,0.22103671063046312,-1.650313622168098,2.092387043429025,percentage points,120,False
+Garden,through_April_quadratic,breakfast_share,lent,-0.6052630395011604,-3.0332198466746534,1.822693767672333,percentage points,120,False
+Garden,through_April_quadratic,breakfast_share,post_march2,-0.016654058080010047,-2.8051997363813808,2.771891620221361,percentage points,120,False
+Garden,through_April_quadratic,discounted_unit_share,ramadan,-0.35232204027788155,-1.1596047611105509,0.4549606805547878,percentage points,120,False
+Garden,through_April_quadratic,discounted_unit_share,lent,-0.8162676683952238,-1.7577873662778452,0.1252520294873976,percentage points,120,False
+Garden,through_April_quadratic,discounted_unit_share,post_march2,0.7348411585879908,-1.0258904385026768,2.4955727556786584,percentage points,120,False
+Garden,through_June_linear,orders,ramadan,0.6812866244641888,-6.618571019176265,8.551792224545306,percent,181,False
+Garden,through_June_linear,orders,lent,0.43585265907736614,-7.057470217900741,8.533311101014647,percent,181,False
+Garden,through_June_linear,orders,post_march2,-0.4582723633206008,-6.638427276217683,6.130983570832912,percent,181,False
+Garden,through_June_linear,evening_share,ramadan,-1.8847919224768521,-5.916708948450297,2.147125103496592,percentage points,181,False
+Garden,through_June_linear,evening_share,lent,0.870779248692172,-2.531085912021679,4.272644409406023,percentage points,181,False
+Garden,through_June_linear,evening_share,post_march2,0.5242162698257589,-3.1689486279290637,4.217381167580582,percentage points,181,False
+Garden,through_June_linear,midday_share,ramadan,3.4510256711174083,0.06975853848938882,6.8322928037454265,percentage points,181,False
+Garden,through_June_linear,midday_share,lent,-2.2957373384001527,-5.833424262691531,1.2419495858912248,percentage points,181,False
+Garden,through_June_linear,midday_share,post_march2,1.2619262472339532,-2.2415590999509374,4.765411594418843,percentage points,181,False
+Garden,through_June_linear,gross_profit_per_order,ramadan,-0.08274551868774765,-0.2094536595379781,0.043962622162482784,USD/order,181,False
+Garden,through_June_linear,gross_profit_per_order,lent,0.10026766436027576,-0.018174460039412435,0.21870978875996394,USD/order,181,False
+Garden,through_June_linear,gross_profit_per_order,post_march2,0.0633097337845677,-0.08396059884453674,0.21058006641367213,USD/order,181,False
+Garden,through_June_linear,bakery_attachment,ramadan,-1.8029797428759569,-4.262393913432723,0.6564344276808083,percentage points,181,False
+Garden,through_June_linear,bakery_attachment,lent,0.9489514639938526,-1.3662128531976034,3.2641157811853083,percentage points,181,False
+Garden,through_June_linear,bakery_attachment,post_march2,2.2415690869944793,-1.7561237212864715,6.239261895275431,percentage points,181,False
+Garden,through_June_linear,meal_attachment,ramadan,0.6781203158529073,-1.4141769374090407,2.7704175691148554,percentage points,181,False
+Garden,through_June_linear,meal_attachment,lent,-0.3203103331437711,-2.27816788945523,1.6375472231676875,percentage points,181,False
+Garden,through_June_linear,meal_attachment,post_march2,1.5253131481409503,0.1257825945624666,2.9248437017194338,percentage points,181,False
+Garden,through_June_linear,breakfast_share,ramadan,0.24857867682004237,-1.6665624629196636,2.163719816559748,percentage points,181,False
+Garden,through_June_linear,breakfast_share,lent,-0.7784503387180601,-2.23922180440744,0.6823211269713196,percentage points,181,False
+Garden,through_June_linear,breakfast_share,post_march2,-0.373416372430859,-2.1550069453139282,1.40817420045221,percentage points,181,False
+Garden,through_June_linear,discounted_unit_share,ramadan,-0.21952866373729898,-0.967609547876704,0.528552220402106,percentage points,181,False
+Garden,through_June_linear,discounted_unit_share,lent,-0.29220435427312863,-0.9835044886934482,0.3990957801471909,percentage points,181,False
+Garden,through_June_linear,discounted_unit_share,post_march2,0.4296657684627845,-0.8861129304971379,1.745444467422707,percentage points,181,False
+Garden,through_June_quadratic,orders,ramadan,0.4566396238887318,-6.894864219977659,8.388612077930102,percent,181,False
+Garden,through_June_quadratic,orders,lent,-0.00821654845439741,-7.546268013269975,8.144436605932393,percent,181,False
+Garden,through_June_quadratic,orders,post_march2,-1.9894143896489538,-9.228675136158287,5.8271971472621065,percent,181,False
+Garden,through_June_quadratic,evening_share,ramadan,-2.2178088187314424,-6.077955919739207,1.6423382822763213,percentage points,181,False
+Garden,through_June_quadratic,evening_share,lent,0.21015699700298424,-3.0675237539915443,3.487837747997513,percentage points,181,False
+Garden,through_June_quadratic,evening_share,post_march2,-1.7867919282301266,-6.548244392447107,2.9746605359868545,percentage points,181,False
+Garden,through_June_quadratic,midday_share,ramadan,3.795998191381399,0.6637564200948971,6.9282399626679005,percentage points,181,False
+Garden,through_June_quadratic,midday_share,lent,-1.6113981181659272,-5.166681153274961,1.9438849169431074,percentage points,181,False
+Garden,through_June_quadratic,midday_share,post_march2,3.655901842468327,-0.2254300139614182,7.537233698898073,percentage points,181,False
+Garden,through_June_quadratic,gross_profit_per_order,ramadan,-0.07612951363529344,-0.19754790342577017,0.045288876155183275,USD/order,181,False
+Garden,through_June_quadratic,gross_profit_per_order,lent,0.11339216406012925,-0.013264831781444747,0.24004915990170325,USD/order,181,False
+Garden,through_June_quadratic,gross_profit_per_order,post_march2,0.10922224479097503,-0.03360701940682331,0.2520515089887734,USD/order,181,False
+Garden,through_June_quadratic,bakery_attachment,ramadan,-1.8602126879218779,-4.282850137011551,0.562424761167796,percentage points,181,False
+Garden,through_June_quadratic,bakery_attachment,lent,0.8354156120527612,-1.6240975528588657,3.2949287769643876,percentage points,181,False
+Garden,through_June_quadratic,bakery_attachment,post_march2,1.8443946292190094,-2.0753321126641757,5.764121371102195,percentage points,181,False
+Garden,through_June_quadratic,meal_attachment,ramadan,0.6147715983367931,-1.5390021132998093,2.7685453099733954,percentage points,181,False
+Garden,through_June_quadratic,meal_attachment,lent,-0.4459783484240703,-2.410898439938454,1.5189417430903134,percentage points,181,False
+Garden,through_June_quadratic,meal_attachment,post_march2,1.085697599612872,-0.6988116114918296,2.8702068107175736,percentage points,181,False
+Garden,through_June_quadratic,breakfast_share,ramadan,0.30168474961956915,-1.578121265971412,2.18149076521055,percentage points,181,False
+Garden,through_June_quadratic,breakfast_share,lent,-0.673101169394314,-2.2524135802260066,0.9062112414373787,percentage points,181,False
+Garden,through_June_quadratic,breakfast_share,post_march2,-0.004880808660377538,-2.600241006621165,2.5904793893004103,percentage points,181,False
+Garden,through_June_quadratic,discounted_unit_share,ramadan,-0.23855582117367585,-0.9754548530414211,0.49834321069406934,percentage points,181,False
+Garden,through_June_quadratic,discounted_unit_share,lent,-0.3299494769087544,-1.04931093322228,0.3894119794047714,percentage points,181,False
+Garden,through_June_quadratic,discounted_unit_share,post_march2,0.2976246699007842,-1.1875926665300072,1.7828420063315757,percentage points,181,False
+Garden,through_June_post_slope,orders,ramadan,-0.09269884097382051,-7.678413818122763,8.116305597441304,percent,181,False
+Garden,through_June_post_slope,orders,lent,-0.6560576859331017,-8.496990961135044,7.856768626142152,percent,181,False
+Garden,through_June_post_slope,orders,post_march2,-1.5997476478623256,-8.369797916143034,5.670504296205392,percent,181,False
+Garden,through_June_post_slope,evening_share,ramadan,-2.770059756884459,-6.949869954800302,1.4097504410313835,percentage points,181,False
+Garden,through_June_post_slope,evening_share,lent,-0.3831865370661689,-3.8457201582758325,3.0793470841434942,percentage points,181,False
+Garden,through_June_post_slope,evening_share,post_march2,-0.7988431875607938,-5.137195730292074,3.5395093551704866,percentage points,181,False
+Garden,through_June_post_slope,midday_share,ramadan,4.748509892057093,1.3096652295738274,8.18735455454036,percentage points,181,False
+Garden,through_June_post_slope,midday_share,lent,-0.45787453871030964,-4.178208648490321,3.2624595710697015,percentage points,181,False
+Garden,through_June_post_slope,midday_share,post_march2,3.2010555170474713,-0.34799700955359947,6.7501080436485426,percentage points,181,False
+Garden,through_June_post_slope,gross_profit_per_order,ramadan,-0.0723398071823988,-0.1993481761409597,0.05466856177616211,USD/order,181,False
+Garden,through_June_post_slope,gross_profit_per_order,lent,0.11500716544348505,-0.023524244066962074,0.25353857495393217,USD/order,181,False
+Garden,through_June_post_slope,gross_profit_per_order,post_march2,0.07886138322092959,-0.06131546429127385,0.21903823073313303,USD/order,181,False
+Garden,through_June_post_slope,bakery_attachment,ramadan,-1.8474673137073891,-4.467513618041977,0.7725789906271981,percentage points,181,False
+Garden,through_June_post_slope,bakery_attachment,lent,0.8859356290726006,-1.9517421169880853,3.723613375133287,percentage points,181,False
+Garden,through_June_post_slope,bakery_attachment,post_march2,2.1750810716877416,-1.6038892626472463,5.954051406022729,percentage points,181,False
+Garden,through_June_post_slope,meal_attachment,ramadan,0.30248030727500885,-1.8327260677842732,2.4376866823342906,percentage points,181,False
+Garden,through_June_post_slope,meal_attachment,lent,-0.8523975729720081,-2.772156063717645,1.0673609177736287,percentage points,181,False
+Garden,through_June_post_slope,meal_attachment,post_march2,0.9639078348502509,-0.6350481185379937,2.562863788238495,percentage points,181,False
+Garden,through_June_post_slope,breakfast_share,ramadan,0.47572516507264323,-1.3695336216898433,2.3209839518351294,percentage points,181,False
+Garden,through_June_post_slope,breakfast_share,lent,-0.4567014695585519,-2.3092586953226144,1.3958557562055103,percentage points,181,False
+Garden,through_June_post_slope,breakfast_share,post_march2,-0.03393910033965769,-2.4080799639293904,2.3402017632500756,percentage points,181,False
+Garden,through_June_post_slope,discounted_unit_share,ramadan,-0.36274845624005253,-1.1295050879299577,0.4040081754498527,percentage points,181,False
+Garden,through_June_post_slope,discounted_unit_share,lent,-0.49507258540234583,-1.304313404815284,0.31416823401059235,percentage points,181,False
+Garden,through_June_post_slope,discounted_unit_share,post_march2,0.21561947242570942,-1.1531797439795928,1.5844186888310117,percentage points,181,False
+Harbour,through_April_linear,orders,ramadan,4.826874485810852,-2.7209482748601306,12.960328247362368,percent,120,False
+Harbour,through_April_linear,orders,lent,-3.4094860444258925,-9.914992008024267,3.5658162680409182,percent,120,False
+Harbour,through_April_linear,orders,post_march2,7.628245430598052,-0.5970715758267111,16.53418463728113,percent,120,False
+Harbour,through_April_linear,evening_share,ramadan,-0.4932661239530029,-3.016354508010086,2.0298222601040807,percentage points,120,False
+Harbour,through_April_linear,evening_share,lent,0.3566305476424298,-1.8062675493826705,2.5195286446675302,percentage points,120,False
+Harbour,through_April_linear,evening_share,post_march2,2.9942754872594657,-0.5663488390194908,6.554899813538421,percentage points,120,False
+Harbour,through_April_linear,midday_share,ramadan,1.1263791602340083,-0.5098069026771401,2.7625652231451565,percentage points,120,False
+Harbour,through_April_linear,midday_share,lent,-2.0108641760222223,-3.7977919416647103,-0.22393641037973427,percentage points,120,False
+Harbour,through_April_linear,midday_share,post_march2,1.3407320750819036,-1.650942951595367,4.332407101759174,percentage points,120,False
+Harbour,through_April_linear,gross_profit_per_order,ramadan,0.025772303505646382,-0.14061273844981775,0.19215734546111052,USD/order,120,False
+Harbour,through_April_linear,gross_profit_per_order,lent,-0.10659018363373746,-0.3251917354325786,0.11201136816510374,USD/order,120,False
+Harbour,through_April_linear,gross_profit_per_order,post_march2,-0.07652370801703146,-0.3457308873846837,0.1926834713506208,USD/order,120,False
+Harbour,through_April_linear,bakery_attachment,ramadan,1.1786821898720596,-3.0300964005340494,5.387460780278169,percentage points,120,False
+Harbour,through_April_linear,bakery_attachment,lent,-0.024986774483929178,-3.897320319239968,3.84734677027211,percentage points,120,False
+Harbour,through_April_linear,bakery_attachment,post_march2,-3.7531763921720147,-8.285634639166952,0.779281854822924,percentage points,120,False
+Harbour,through_April_linear,meal_attachment,ramadan,-0.46644200171323014,-1.6492629368302418,0.7163789334037817,percentage points,120,False
+Harbour,through_April_linear,meal_attachment,lent,-0.11053537713159806,-1.3560179290966614,1.1349471748334652,percentage points,120,False
+Harbour,through_April_linear,meal_attachment,post_march2,0.30057194272178883,-1.0087082817093773,1.609852167152955,percentage points,120,False
+Harbour,through_April_linear,breakfast_share,ramadan,0.25764622842357576,-1.1060181596606422,1.621310616507794,percentage points,120,False
+Harbour,through_April_linear,breakfast_share,lent,-0.19495240839947822,-1.6057249404029947,1.2158201236040385,percentage points,120,False
+Harbour,through_April_linear,breakfast_share,post_march2,-0.9448248447929481,-3.1125386201928897,1.2228889306069937,percentage points,120,False
+Harbour,through_April_linear,discounted_unit_share,ramadan,4.156517408410521,-2.672355893209171,10.985390710030213,percentage points,120,False
+Harbour,through_April_linear,discounted_unit_share,lent,-0.4055495764864538,-3.4758515476894,2.6647523947164924,percentage points,120,False
+Harbour,through_April_linear,discounted_unit_share,post_march2,6.708571074882576,-2.8898080491770575,16.30695019894221,percentage points,120,False
+Harbour,through_April_quadratic,orders,ramadan,4.57580181731049,-3.3858918522353703,13.193596001604549,percent,120,False
+Harbour,through_April_quadratic,orders,lent,-4.272961559629499,-11.47917819292715,3.519891721475084,percent,120,False
+Harbour,through_April_quadratic,orders,post_march2,8.255145785182911,0.9871682737100502,16.046194673051883,percent,120,False
+Harbour,through_April_quadratic,evening_share,ramadan,-0.39861578944950515,-2.971031941869836,2.173800362970826,percentage points,120,False
+Harbour,through_April_quadratic,evening_share,lent,0.7110673067850009,-1.876396183762573,3.2985307973325746,percentage points,120,False
+Harbour,through_April_quadratic,evening_share,post_march2,2.7650382112544225,-0.6647108868983793,6.194787309407224,percentage points,120,False
+Harbour,through_April_quadratic,midday_share,ramadan,1.460322996586025,-0.07829312107236214,2.9989391142444117,percentage points,120,False
+Harbour,through_April_quadratic,midday_share,lent,-0.7603459215103997,-2.5823862021637476,1.0616943591429482,percentage points,120,False
+Harbour,through_April_quadratic,midday_share,post_march2,0.5319406874380382,-2.48029492365213,3.544176298528207,percentage points,120,False
+Harbour,through_April_quadratic,gross_profit_per_order,ramadan,0.03550117798733732,-0.12640405929949913,0.19740641527417377,USD/order,120,False
+Harbour,through_April_quadratic,gross_profit_per_order,lent,-0.07015850318079458,-0.3305797615828221,0.19026275522123293,USD/order,120,False
+Harbour,through_April_quadratic,gross_profit_per_order,post_march2,-0.1000864423325199,-0.4105974584396578,0.21042457377461798,USD/order,120,False
+Harbour,through_April_quadratic,bakery_attachment,ramadan,0.8949470268114844,-3.3571514810619165,5.147045534684885,percentage points,120,False
+Harbour,through_April_quadratic,bakery_attachment,lent,-1.0874887949738106,-5.200778297936642,3.025800707989021,percentage points,120,False
+Harbour,through_April_quadratic,bakery_attachment,post_march2,-3.065987316422028,-7.703164025937914,1.5711893930938574,percentage points,120,False
+Harbour,through_April_quadratic,meal_attachment,ramadan,-0.435232966001412,-1.6290974799763867,0.7586315479735626,percentage points,120,False
+Harbour,through_April_quadratic,meal_attachment,lent,0.00633298399665078,-1.383841879920596,1.3965078479138975,percentage points,120,False
+Harbour,through_April_quadratic,meal_attachment,post_march2,0.22498558192493612,-1.2992165184643238,1.749187682314196,percentage points,120,False
+Harbour,through_April_quadratic,breakfast_share,ramadan,0.15590190501582726,-1.2232529280994922,1.5350567381311464,percentage points,120,False
+Harbour,through_April_quadratic,breakfast_share,lent,-0.5759540016740753,-2.3524972406618896,1.2005892373137392,percentage points,120,False
+Harbour,through_April_quadratic,breakfast_share,post_march2,-0.6984063649288602,-2.9156343341990745,1.518821604341354,percentage points,120,False
+Harbour,through_April_quadratic,discounted_unit_share,ramadan,4.015140293600063,-2.621904630654618,10.652185217854745,percentage points,120,False
+Harbour,through_April_quadratic,discounted_unit_share,lent,-0.9349639378114123,-4.702818941985089,2.832891066362264,percentage points,120,False
+Harbour,through_April_quadratic,discounted_unit_share,post_march2,7.050977732594083,-3.505657010699449,17.607612475887613,percentage points,120,False
+Harbour,through_June_linear,orders,ramadan,4.742358734921645,-2.6550651946198602,12.701926764746926,percent,181,False
+Harbour,through_June_linear,orders,lent,-3.8664245427614943,-10.433124750382467,3.181720970354305,percent,181,False
+Harbour,through_June_linear,orders,post_march2,5.063990399487051,-1.490135755778638,12.054180191513439,percent,181,False
+Harbour,through_June_linear,evening_share,ramadan,-0.5269865038399109,-2.9705836573082656,1.9166106496284439,percentage points,181,False
+Harbour,through_June_linear,evening_share,lent,0.40539787298498575,-1.6122943907032536,2.423090136673225,percentage points,181,False
+Harbour,through_June_linear,evening_share,post_march2,2.498256901329278,0.05988599067366755,4.936627811984888,percentage points,181,False
+Harbour,through_June_linear,midday_share,ramadan,1.1292419174981991,-0.38989565451045644,2.6483794895068544,percentage points,181,False
+Harbour,through_June_linear,midday_share,lent,-1.8835963566152434,-3.549137320027866,-0.21805539320262046,percentage points,181,False
+Harbour,through_June_linear,midday_share,post_march2,0.8071908690331845,-1.4989638311639466,3.1133455692303156,percentage points,181,False
+Harbour,through_June_linear,gross_profit_per_order,ramadan,0.021534871792278282,-0.14356636974017054,0.1866361133247271,USD/order,181,False
+Harbour,through_June_linear,gross_profit_per_order,lent,-0.09032787048045157,-0.29786560603358114,0.11720986507267803,USD/order,181,False
+Harbour,through_June_linear,gross_profit_per_order,post_march2,-0.08525031143225295,-0.30391581250783906,0.13341518964333318,USD/order,181,False
+Harbour,through_June_linear,bakery_attachment,ramadan,0.9389131898290379,-3.096730225502638,4.974556605160714,percentage points,181,False
+Harbour,through_June_linear,bakery_attachment,lent,0.6930001567767389,-3.1961084006073697,4.582108714160847,percentage points,181,False
+Harbour,through_June_linear,bakery_attachment,post_march2,-4.059842013828141,-7.440686766355113,-0.6789972613011688,percentage points,181,False
+Harbour,through_June_linear,meal_attachment,ramadan,-0.44610094251932725,-1.6442022133282683,0.7520003282896138,percentage points,181,False
+Harbour,through_June_linear,meal_attachment,lent,-0.1256190497080414,-1.3443456037087735,1.0931075042926908,percentage points,181,False
+Harbour,through_June_linear,meal_attachment,post_march2,0.5533347235748737,-0.5116975036526624,1.6183669508024097,percentage points,181,False
+Harbour,through_June_linear,breakfast_share,ramadan,0.23103513373922488,-1.0289988357290087,1.4910691032074583,percentage points,181,False
+Harbour,through_June_linear,breakfast_share,lent,-0.2229368055593358,-1.502216741072181,1.0563431299535095,percentage points,181,False
+Harbour,through_June_linear,breakfast_share,post_march2,-0.536601748474991,-2.237163166489417,1.163959669539435,percentage points,181,False
+Harbour,through_June_linear,discounted_unit_share,ramadan,4.42633229937233,-2.1236755024141885,10.976340101158849,percentage points,181,False
+Harbour,through_June_linear,discounted_unit_share,lent,-1.7183822415755654,-5.854987519355839,2.418223036204708,percentage points,181,False
+Harbour,through_June_linear,discounted_unit_share,post_march2,5.449644797410811,-1.6182437846917759,12.517533379513399,percentage points,181,False
+Harbour,through_June_quadratic,orders,ramadan,4.938037847049716,-2.5818588691750644,13.038410088328373,percent,181,False
+Harbour,through_June_quadratic,orders,lent,-3.5098231480241897,-10.083897603373247,3.5449044249815156,percent,181,False
+Harbour,through_June_quadratic,orders,post_march2,6.433677908891316,-1.7922153215547558,15.348572725721302,percent,181,False
+Harbour,through_June_quadratic,evening_share,ramadan,-0.4492230724150517,-2.947566860598487,2.0491207157683835,percentage points,181,False
+Harbour,through_June_quadratic,evening_share,lent,0.5596610762781087,-1.4213586987332116,2.5406808512894288,percentage points,181,False
+Harbour,through_June_quadratic,evening_share,post_march2,3.037904977907677,-0.3256827824021362,6.40149273821749,percentage points,181,False
+Harbour,through_June_quadratic,midday_share,ramadan,1.262280892738835,-0.3285838110255301,2.8531455965031998,percentage points,181,False
+Harbour,through_June_quadratic,midday_share,lent,-1.6196802959757908,-3.2142872051191493,-0.025073386832432515,percentage points,181,False
+Harbour,through_June_quadratic,midday_share,post_march2,1.7304297974480354,-0.9500414232332021,4.410901018129273,percentage points,181,False
+Harbour,through_June_quadratic,gross_profit_per_order,ramadan,0.024326627887423014,-0.13902337171529014,0.18767662749013617,USD/order,181,False
+Harbour,through_June_quadratic,gross_profit_per_order,lent,-0.08478972446298524,-0.29871282538085997,0.12913337645488945,USD/order,181,False
+Harbour,through_June_quadratic,gross_profit_per_order,post_march2,-0.0658766060874999,-0.30373367739045987,0.17198046521546004,USD/order,181,False
+Harbour,through_June_quadratic,bakery_attachment,ramadan,0.9577178337367485,-3.1268714530413875,5.042307120514885,percentage points,181,False
+Harbour,through_June_quadratic,bakery_attachment,lent,0.73030386821075,-3.1546624300244153,4.6152701664459155,percentage points,181,False
+Harbour,through_June_quadratic,bakery_attachment,post_march2,-3.9293450729189763,-8.095842779624402,0.2371526337864492,percentage points,181,False
+Harbour,through_June_quadratic,meal_attachment,ramadan,-0.46885732255705775,-1.659410634466137,0.7216959893520215,percentage points,181,False
+Harbour,through_June_quadratic,meal_attachment,lent,-0.17076201749706127,-1.4123440271139087,1.070819992119786,percentage points,181,False
+Harbour,through_June_quadratic,meal_attachment,post_march2,0.3954142654337135,-0.7345839806913707,1.5254125115587978,percentage points,181,False
+Harbour,through_June_quadratic,breakfast_share,ramadan,0.15781466384443854,-1.1843175278594036,1.4999468555482807,percentage points,181,False
+Harbour,through_June_quadratic,breakfast_share,lent,-0.3681879091389407,-1.6965048220510572,0.9601290037731756,percentage points,181,False
+Harbour,through_June_quadratic,breakfast_share,post_march2,-1.044723432676253,-3.059669302011154,0.9702224366586478,percentage points,181,False
+Harbour,through_June_quadratic,discounted_unit_share,ramadan,4.4424250648224195,-2.3018339267643793,11.186684056409218,percentage points,181,False
+Harbour,through_June_quadratic,discounted_unit_share,lent,-1.6864582188995165,-6.216213501922627,2.8432970641235937,percentage points,181,False
+Harbour,through_June_quadratic,discounted_unit_share,post_march2,5.561322352822659,-2.5886601283190127,13.71130483396433,percentage points,181,False
+Harbour,through_June_post_slope,orders,ramadan,5.199310615576,-2.814329300372914,13.873731326061694,percent,181,False
+Harbour,through_June_post_slope,orders,lent,-3.271819962165117,-10.065089357447881,4.0345817501141426,percent,181,False
+Harbour,through_June_post_slope,orders,post_march2,5.749754231618401,-2.1871426612116727,14.330680283817843,percent,181,False
+Harbour,through_June_post_slope,evening_share,ramadan,-0.22587107896516084,-2.854923476944786,2.4031813190144646,percentage points,181,False
+Harbour,through_June_post_slope,evening_share,lent,0.8319223954869482,-1.2845494433207678,2.948394234294664,percentage points,181,False
+Harbour,through_June_post_slope,evening_share,post_march2,2.948282978366406,0.01589316963948144,5.88067278709333,percentage points,181,False
+Harbour,through_June_post_slope,midday_share,ramadan,1.569712324030866,-0.08306075849482918,3.2224854065565607,percentage points,181,False
+Harbour,through_June_post_slope,midday_share,lent,-1.259678037250739,-2.9006477320708566,0.3812916575693789,percentage points,181,False
+Harbour,through_June_post_slope,midday_share,post_march2,1.4654871658279116,-0.9249340350359782,3.8559083666918017,percentage points,181,False
+Harbour,through_June_post_slope,gross_profit_per_order,ramadan,0.03168971912265428,-0.1297353081638275,0.19311474640913606,USD/order,181,False
+Harbour,through_June_post_slope,gross_profit_per_order,lent,-0.07594371393825208,-0.30461412144691097,0.1527266935704068,USD/order,181,False
+Harbour,through_June_post_slope,gross_profit_per_order,post_march2,-0.07007358606555067,-0.29113316496329,0.1509859928321887,USD/order,181,False
+Harbour,through_June_post_slope,bakery_attachment,ramadan,0.7421832270960329,-3.3852652799644396,4.869631734156505,percentage points,181,False
+Harbour,through_June_post_slope,bakery_attachment,lent,0.414335742785279,-3.466901925214784,4.295573410785342,percentage points,181,False
+Harbour,through_June_post_slope,bakery_attachment,post_march2,-4.353860871882958,-8.00888878912393,-0.6988329546419856,percentage points,181,False
+Harbour,through_June_post_slope,meal_attachment,ramadan,-0.4429474221128526,-1.6867929657303302,0.800898121504625,percentage points,181,False
+Harbour,through_June_post_slope,meal_attachment,lent,-0.12115214541002567,-1.427745474284366,1.1854411834643146,percentage points,181,False
+Harbour,through_June_post_slope,meal_attachment,post_march2,0.5580477548583873,-0.4750231763150143,1.5911186860317887,percentage points,181,False
+Harbour,through_June_post_slope,breakfast_share,ramadan,-0.0015962416674523451,-1.38984762782513,1.386655144490225,percentage points,181,False
+Harbour,through_June_post_slope,breakfast_share,lent,-0.5524549176108005,-1.9913754341930774,0.8864655989714764,percentage points,181,False
+Harbour,through_June_post_slope,breakfast_share,post_march2,-0.8842763497131746,-2.7295339044523863,0.9609812050260371,percentage points,181,False
+Harbour,through_June_post_slope,discounted_unit_share,ramadan,4.913341435866522,-2.0914465339960246,11.918129405729069,percentage points,181,False
+Harbour,through_June_post_slope,discounted_unit_share,lent,-1.0285426576895167,-5.539304909807745,3.482219594428712,percentage points,181,False
+Harbour,through_June_post_slope,discounted_unit_share,post_march2,6.177494628646937,-1.2699876099435263,13.6249768672374,percentage points,181,False
+Uptown,through_April_linear,orders,ramadan,-0.510268157512774,-12.611567028238834,13.266783777763111,percent,120,False
+Uptown,through_April_linear,orders,lent,-0.2526871089059521,-11.357783155884126,12.243655260684884,percent,120,False
+Uptown,through_April_linear,orders,post_march2,10.223055887281822,-1.3155594006677205,23.110816409826775,percent,120,False
+Uptown,through_April_linear,evening_share,ramadan,1.8511955606362627,-0.8881588719610658,4.590549993233592,percentage points,120,False
+Uptown,through_April_linear,evening_share,lent,-0.6237666701365281,-3.316093961699809,2.0685606214267533,percentage points,120,False
+Uptown,through_April_linear,evening_share,post_march2,-4.56607301629586,-8.492620441615136,-0.6395255909765841,percentage points,120,False
+Uptown,through_April_linear,midday_share,ramadan,-1.8963645788387737,-5.531902951401404,1.739173793723857,percentage points,120,False
+Uptown,through_April_linear,midday_share,lent,2.563619896098142,-0.30694540886681765,5.4341852010631015,percentage points,120,False
+Uptown,through_April_linear,midday_share,post_march2,0.4711957323046294,-5.098926670466644,6.041318135075902,percentage points,120,False
+Uptown,through_April_linear,gross_profit_per_order,ramadan,-0.07485710348585775,-0.2519705603091713,0.10225635333745578,USD/order,120,False
+Uptown,through_April_linear,gross_profit_per_order,lent,0.2933878944408008,0.045612957257742254,0.5411628316238594,USD/order,120,False
+Uptown,through_April_linear,gross_profit_per_order,post_march2,-0.29082261083729427,-0.7493375615592054,0.16769233988461685,USD/order,120,False
+Uptown,through_April_linear,bakery_attachment,ramadan,-4.8436740168029,-9.24671609795336,-0.4406319356524413,percentage points,120,False
+Uptown,through_April_linear,bakery_attachment,lent,4.030082523953197,-1.025289653818831,9.085454701725226,percentage points,120,False
+Uptown,through_April_linear,bakery_attachment,post_march2,-6.912491763987656,-13.054884511444264,-0.7700990165310485,percentage points,120,False
+Uptown,through_April_linear,meal_attachment,ramadan,0.6697819422801572,-0.7172237101968629,2.056787594757177,percentage points,120,False
+Uptown,through_April_linear,meal_attachment,lent,-0.9705177110193537,-2.6227376125572346,0.6817021905185273,percentage points,120,False
+Uptown,through_April_linear,meal_attachment,post_march2,-1.302102024234097,-3.2527773112005645,0.6485732627323701,percentage points,120,False
+Uptown,through_April_linear,breakfast_share,ramadan,-0.4528480269577994,-3.318969926087678,2.4132738721720797,percentage points,120,False
+Uptown,through_April_linear,breakfast_share,lent,-0.3003308911125608,-2.7458169014313722,2.1451551192062506,percentage points,120,False
+Uptown,through_April_linear,breakfast_share,post_march2,2.1255155316840857,-1.0227455426883512,5.273776606056522,percentage points,120,False
+Uptown,through_April_linear,discounted_unit_share,ramadan,-1.0118205292961282,-3.568138209574276,1.5444971509820198,percentage points,120,False
+Uptown,through_April_linear,discounted_unit_share,lent,-0.14277673501987878,-2.606390665199625,2.320837195159868,percentage points,120,False
+Uptown,through_April_linear,discounted_unit_share,post_march2,0.6499409140823268,-0.9457523466897426,2.245634174854396,percentage points,120,False
+Uptown,through_April_quadratic,orders,ramadan,-1.927589136369598,-14.40552781918475,12.369380025927759,percent,120,False
+Uptown,through_April_quadratic,orders,lent,-5.470693607118076,-16.591848414134642,7.133290898076182,percent,120,False
+Uptown,through_April_quadratic,orders,post_march2,14.12072855936676,2.770844653344917,26.72407948820713,percent,120,False
+Uptown,through_April_quadratic,evening_share,ramadan,1.7883923715294385,-0.9535288440970888,4.530313587155966,percentage points,120,False
+Uptown,through_April_quadratic,evening_share,lent,-0.8589455411634299,-4.48641296670931,2.76852188438245,percentage points,120,False
+Uptown,through_April_quadratic,evening_share,post_march2,-4.4139675634117195,-8.546694874212276,-0.28124025261116115,percentage points,120,False
+Uptown,through_April_quadratic,midday_share,ramadan,-2.220733151597976,-5.933265637702305,1.4917993345063534,percentage points,120,False
+Uptown,through_April_quadratic,midday_share,lent,1.3489580959091794,-2.681508620046664,5.3794248118650225,percentage points,120,False
+Uptown,through_April_quadratic,midday_share,post_march2,1.2567964217374852,-4.092607979762129,6.606200823237099,percentage points,120,False
+Uptown,through_April_quadratic,gross_profit_per_order,ramadan,-0.0944293638308796,-0.26655621847248934,0.0776974908107301,USD/order,120,False
+Uptown,through_April_quadratic,gross_profit_per_order,lent,0.22009572318566012,-0.0873573843220593,0.5275488306933795,USD/order,120,False
+Uptown,through_April_quadratic,gross_profit_per_order,post_march2,-0.24341980269834107,-0.7005680477796434,0.2137284423829613,USD/order,120,False
+Uptown,through_April_quadratic,bakery_attachment,ramadan,-5.31356435713355,-10.016183904910445,-0.6109448093566547,percentage points,120,False
+Uptown,through_April_quadratic,bakery_attachment,lent,2.2704858965045736,-2.676949628784133,7.21792142179328,percentage points,120,False
+Uptown,through_April_quadratic,bakery_attachment,post_march2,-5.7744463233289505,-12.541627448313761,0.9927348016558597,percentage points,120,False
+Uptown,through_April_quadratic,meal_attachment,ramadan,0.5588668037831331,-0.8926482764310313,2.0103818839972973,percentage points,120,False
+Uptown,through_April_quadratic,meal_attachment,lent,-1.3858612217947244,-3.5517181659062396,0.779995722316791,percentage points,120,False
+Uptown,through_April_quadratic,meal_attachment,post_march2,-1.0334723955046539,-2.9915690981481324,0.9246243071388247,percentage points,120,False
+Uptown,through_April_quadratic,breakfast_share,ramadan,-0.420470314289685,-3.2754996444457287,2.4345590158663586,percentage points,120,False
+Uptown,through_April_quadratic,breakfast_share,lent,-0.17908618968879383,-3.3390428845030318,2.9808705051254445,percentage points,120,False
+Uptown,through_April_quadratic,breakfast_share,post_march2,2.047098707335315,-1.048290185080064,5.142487599750694,percentage points,120,False
+Uptown,through_April_quadratic,discounted_unit_share,ramadan,-0.9305038807182558,-3.571201572711035,1.7101938112745234,percentage points,120,False
+Uptown,through_April_quadratic,discounted_unit_share,lent,0.16172941952749673,-2.4758637825011465,2.79932262155614,percentage points,120,False
+Uptown,through_April_quadratic,discounted_unit_share,post_march2,0.4529970035125357,-1.1999206930203945,2.105914700045466,percentage points,120,False
+Uptown,through_June_linear,orders,ramadan,-0.2611028438694105,-12.648372961312326,13.882796957122896,percent,181,False
+Uptown,through_June_linear,orders,lent,-0.41303274245970967,-11.42925672513507,11.973363673564883,percent,181,False
+Uptown,through_June_linear,orders,post_march2,9.215081325068928,-0.27164030105697085,19.604233187521665,percent,181,False
+Uptown,through_June_linear,evening_share,ramadan,1.7190923958618203,-1.3258135023578361,4.763998294081477,percentage points,181,False
+Uptown,through_June_linear,evening_share,lent,-0.26542455335180937,-3.353013200295365,2.8221640935917462,percentage points,181,False
+Uptown,through_June_linear,evening_share,post_march2,-1.6836328356492773,-5.796602454723489,2.4293367834249335,percentage points,181,False
+Uptown,through_June_linear,midday_share,ramadan,-1.9912445467839903,-5.588811517744056,1.606322424176076,percentage points,181,False
+Uptown,through_June_linear,midday_share,lent,2.8011092226175807,0.17014156577499184,5.43207687946017,percentage points,181,False
+Uptown,through_June_linear,midday_share,post_march2,0.8633571489514238,-3.334245610601684,5.060959908504531,percentage points,181,False
+Uptown,through_June_linear,gross_profit_per_order,ramadan,-0.08380219291005114,-0.2576245238424361,0.09002013802233383,USD/order,181,False
+Uptown,through_June_linear,gross_profit_per_order,lent,0.3088881944092389,0.08265536622892664,0.5351210225895512,USD/order,181,False
+Uptown,through_June_linear,gross_profit_per_order,post_march2,-0.28242562450409325,-0.6260522563593118,0.06120100735112538,USD/order,181,False
+Uptown,through_June_linear,bakery_attachment,ramadan,-4.498052910296488,-8.464006072032152,-0.5320997485608256,percentage points,181,False
+Uptown,through_June_linear,bakery_attachment,lent,3.9312781918953292,-0.782165517988858,8.644721901779517,percentage points,181,False
+Uptown,through_June_linear,bakery_attachment,post_march2,-1.9591026687557036,-7.625964063411852,3.707758725900446,percentage points,181,False
+Uptown,through_June_linear,meal_attachment,ramadan,0.5790150287095577,-0.7958025051815868,1.9538325626007023,percentage points,181,False
+Uptown,through_June_linear,meal_attachment,lent,-0.846266335650111,-2.4221857085673566,0.7296530372671343,percentage points,181,False
+Uptown,through_June_linear,meal_attachment,post_march2,-0.9922066788814768,-2.7611304091379045,0.7767170513749511,percentage points,181,False
+Uptown,through_June_linear,breakfast_share,ramadan,-0.3019466499604395,-3.14049675972334,2.5366034598024614,percentage points,181,False
+Uptown,through_June_linear,breakfast_share,lent,-0.6812636128968943,-3.068111332642478,1.7055841068486892,percentage points,181,False
+Uptown,through_June_linear,breakfast_share,post_march2,1.2945014753555761,-1.6486576858942017,4.237660636605354,percentage points,181,False
+Uptown,through_June_linear,discounted_unit_share,ramadan,-0.9572161769104793,-3.4892002846504844,1.5747679308295257,percentage points,181,False
+Uptown,through_June_linear,discounted_unit_share,lent,-0.27985597665003,-2.686394181466119,2.126682228166059,percentage points,181,False
+Uptown,through_June_linear,discounted_unit_share,post_march2,0.626787903605145,-0.7626704352861868,2.016246242496477,percentage points,181,False
+Uptown,through_June_quadratic,orders,ramadan,-0.36865517810902554,-12.912722107533265,13.98226137318732,percent,181,False
+Uptown,through_June_quadratic,orders,lent,-0.6259516842018278,-11.75780299704313,11.910195054863443,percent,181,False
+Uptown,through_June_quadratic,orders,post_march2,8.400409789004453,-2.399075349665356,20.39485163201067,percent,181,False
+Uptown,through_June_quadratic,evening_share,ramadan,1.4415594757478378,-1.4716031015124962,4.354722053008172,percentage points,181,False
+Uptown,through_June_quadratic,evening_share,lent,-0.8159804700804522,-3.8651232934341064,2.233162353273202,percentage points,181,False
+Uptown,through_June_quadratic,evening_share,post_march2,-3.6096037423129967,-7.178527638294548,-0.04067984633144561,percentage points,181,False
+Uptown,through_June_quadratic,midday_share,ramadan,-2.086856033337515,-5.782322797884061,1.608610731209031,percentage points,181,False
+Uptown,through_June_quadratic,midday_share,lent,2.6114399408342037,-0.2417199527541405,5.464599834422549,percentage points,181,False
+Uptown,through_June_quadratic,midday_share,post_march2,0.19985048686132523,-5.022020945575463,5.421721919298113,percentage points,181,False
+Uptown,through_June_quadratic,gross_profit_per_order,ramadan,-0.08975121274493197,-0.27035986818153723,0.09085744269167331,USD/order,181,False
+Uptown,through_June_quadratic,gross_profit_per_order,lent,0.2970868266021899,0.06183471873388108,0.5323389344704987,USD/order,181,False
+Uptown,through_June_quadratic,gross_profit_per_order,post_march2,-0.32370951659312824,-0.7257117806843303,0.07829274749807386,USD/order,181,False
+Uptown,through_June_quadratic,bakery_attachment,ramadan,-5.111661418316754,-9.263395283113706,-0.9599275535198029,percentage points,181,False
+Uptown,through_June_quadratic,bakery_attachment,lent,2.7140323440627627,-1.9654788273855583,7.393543515511084,percentage points,181,False
+Uptown,through_June_quadratic,bakery_attachment,post_march2,-6.2173079081309215,-11.55433114554037,-0.880284670721472,percentage points,181,False
+Uptown,through_June_quadratic,meal_attachment,ramadan,0.5251878845005494,-0.8686017911753651,1.9189775601764638,percentage points,181,False
+Uptown,through_June_quadratic,meal_attachment,lent,-0.9530459303472235,-2.6059286485783217,0.6998367878838747,percentage points,181,False
+Uptown,through_June_quadratic,meal_attachment,post_march2,-1.3657461987797836,-3.240777994282907,0.5092855967233393,percentage points,181,False
+Uptown,through_June_quadratic,breakfast_share,ramadan,-0.2420419886527821,-3.016779986204605,2.532696008899041,percentage points,181,False
+Uptown,through_June_quadratic,breakfast_share,lent,-0.562427743952014,-3.029093817628227,1.9042383297241992,percentage points,181,False
+Uptown,through_June_quadratic,breakfast_share,post_march2,1.7102166085539292,-1.3951203378352268,4.815553554943086,percentage points,181,False
+Uptown,through_June_quadratic,discounted_unit_share,ramadan,-0.9404092771341142,-3.4941653525946816,1.6133467983264538,percentage points,181,False
+Uptown,through_June_quadratic,discounted_unit_share,lent,-0.24651529003907524,-2.682029526243313,2.188998946165162,percentage points,181,False
+Uptown,through_June_quadratic,discounted_unit_share,post_march2,0.7434212744759201,-0.7464122388977936,2.233254787849634,percentage points,181,False
+Uptown,through_June_post_slope,orders,ramadan,-1.4086636190599189,-14.217912269592844,13.313301955626617,percent,181,False
+Uptown,through_June_post_slope,orders,lent,-2.0321582051118483,-13.291598767835383,10.689366769087108,percent,181,False
+Uptown,through_June_post_slope,orders,post_march2,7.34242230694733,-2.012351501986292,17.590286156898564,percent,181,False
+Uptown,through_June_post_slope,evening_share,ramadan,0.7964865506490951,-2.160704527349104,3.7536776286472935,percentage points,181,False
+Uptown,through_June_post_slope,evening_share,lent,-1.572278952293777,-5.007556326868741,1.8629984222811868,percentage points,181,False
+Uptown,through_June_post_slope,evening_share,post_march2,-3.0624950754206366,-6.725255075368433,0.6002649245271597,percentage points,181,False
+Uptown,through_June_post_slope,midday_share,ramadan,-2.4601111714027533,-6.430693063233216,1.510470720427709,percentage points,181,False
+Uptown,through_June_post_slope,midday_share,lent,2.1369681768182938,-1.1467013868736227,5.42063774051021,percentage points,181,False
+Uptown,through_June_post_slope,midday_share,post_march2,0.162621848464781,-4.824407284507096,5.149650981436657,percentage points,181,False
+Uptown,through_June_post_slope,gross_profit_per_order,ramadan,-0.11169965029222254,-0.29432081250604814,0.07092151192160309,USD/order,181,False
+Uptown,through_June_post_slope,gross_profit_per_order,lent,0.26937195343985754,0.009281211812384005,0.5294626950673311,USD/order,181,False
+Uptown,through_June_post_slope,gross_profit_per_order,post_march2,-0.3241192152931618,-0.6888543610496902,0.040615930463366645,USD/order,181,False
+Uptown,through_June_post_slope,bakery_attachment,ramadan,-6.464012994538544,-10.73490408217632,-2.1931219069007697,percentage points,181,False
+Uptown,through_June_post_slope,bakery_attachment,lent,1.146531490400371,-3.6489076350468346,5.941970615847576,percentage points,181,False
+Uptown,through_June_post_slope,bakery_attachment,post_march2,-4.897289261790121,-10.068635436159218,0.27405691257897447,percentage points,181,False
+Uptown,through_June_post_slope,meal_attachment,ramadan,0.4274236978182133,-0.9982064028474789,1.8530537984839057,percentage points,181,False
+Uptown,through_June_post_slope,meal_attachment,lent,-1.0609926986411784,-2.9446251970990134,0.8226397998166564,percentage points,181,False
+Uptown,through_June_post_slope,meal_attachment,post_march2,-1.2187644913290814,-2.9766478656791024,0.5391188830209398,percentage points,181,False
+Uptown,through_June_post_slope,breakfast_share,ramadan,0.056144967001318026,-2.7982353534778825,2.9105252874805183,percentage points,181,False
+Uptown,through_June_post_slope,breakfast_share,lent,-0.1740333506142714,-2.8289806723970625,2.48091397116852,percentage points,181,False
+Uptown,through_June_post_slope,breakfast_share,post_march2,1.8296801885290581,-1.0638422355185428,4.723202612576658,percentage points,181,False
+Uptown,through_June_post_slope,discounted_unit_share,ramadan,-0.863054131190331,-3.4957853203774816,1.7696770579968188,percentage points,181,False
+Uptown,through_June_post_slope,discounted_unit_share,lent,-0.14647715155232005,-2.6178994452157838,2.324945142111144,percentage points,181,False
+Uptown,through_June_post_slope,discounted_unit_share,post_march2,0.7675159186473821,-0.6376136574639344,2.1726454947586986,percentage points,181,False

@@ -1,0 +1,7 @@
+pattern,scenario,conditional_contribution_usd,assumptions
+1,1% of baseline identified customers make one genuinely additional order,103.15301022584694,"Observed mean identified-order gross profit; no substitution; before intervention, labor, and other incremental costs; return uplift unmeasured"
+1,2% of baseline identified customers make one genuinely additional order,206.30602045169388,"Observed mean identified-order gross profit; no substitution; before intervention, labor, and other incremental costs; return uplift unmeasured"
+1,5% of baseline identified customers make one genuinely additional order,515.7650511292347,"Observed mean identified-order gross profit; no substitution; before intervention, labor, and other incremental costs; return uplift unmeasured"
+2,Avoid one assumed $0.25 branch-loss contact for each Uptown customer already observed elsewhere,54.0,Hypothetical avoidable per-contact cost; current recovery policy/cost unknown; no actual messaging or savings measured; branch cohorts must not be summed
+2,Avoid one assumed $0.50 branch-loss contact for each Uptown customer already observed elsewhere,108.0,Hypothetical avoidable per-contact cost; current recovery policy/cost unknown; no actual messaging or savings measured; branch cohorts must not be summed
+2,Avoid one assumed $1.00 branch-loss contact for each Uptown customer already observed elsewhere,216.0,Hypothetical avoidable per-contact cost; current recovery policy/cost unknown; no actual messaging or savings measured; branch cohorts must not be summed

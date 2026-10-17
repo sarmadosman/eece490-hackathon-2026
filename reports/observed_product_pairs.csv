@@ -1,0 +1,381 @@
+branch,product_drink,category,product_food,pair_orders,drink_product_orders,food_product_orders,pair_rate_given_drink,lift
+Harbour,Cold Brew,Bakery,Chocolate Cookie,9,116,116,0.07758620689655173,1.6179399524375744
+Harbour,Classic Matcha,Bakery,Pistachio Cookie,8,145,99,0.05517241379310345,1.3481017067223964
+Harbour,Classic Matcha,Bakery,Butter Croissant,8,145,144,0.05517241379310345,0.9268199233716475
+Harbour,Iced Latte,Bakery,Chocolate Cookie,7,179,116,0.03910614525139665,0.815497977268349
+Harbour,Iced Matcha,Bakery,Chocolate Cookie,7,145,116,0.04827586206896552,1.006718192627824
+Harbour,Iced Matcha,Bakery,Cinnamon Roll,7,145,102,0.04827586206896552,1.144895199459094
+Harbour,Classic Matcha,Bakery,Cinnamon Roll,7,145,102,0.04827586206896552,1.144895199459094
+Garden,Classic Matcha,Bakery,Chocolate Cookie,7,89,82,0.07865168539325842,1.5730337078651686
+Harbour,Iced Matcha,Bakery,Butter Croissant,6,145,144,0.041379310344827586,0.6951149425287356
+Garden,Iced Matcha,Bakery,Pistachio Cookie,6,122,60,0.04918032786885246,1.3442622950819672
+Garden,Iced Americano,Bakery,Cinnamon Roll,6,77,59,0.07792207792207792,2.1659696235967423
+Harbour,Classic Matcha,Bakery,Chocolate Croissant,6,145,99,0.041379310344827586,1.0110762800417974
+Garden,Iced Matcha,Bakery,Chocolate Croissant,6,122,70,0.04918032786885246,1.1522248243559718
+Harbour,Classic Matcha,Bakery,Chocolate Cookie,6,145,116,0.041379310344827586,0.8629013079667063
+Harbour,Iced Matcha,Bakery,Chocolate Croissant,6,145,99,0.041379310344827586,1.0110762800417974
+Garden,Iced Matcha,Bakery,Butter Croissant,6,122,96,0.04918032786885246,0.8401639344262295
+Garden,Spanish Latte,Bakery,Chocolate Croissant,5,59,70,0.0847457627118644,1.9854721549636805
+Harbour,Classic Matcha,Bakery,Banana Bread,5,145,97,0.034482758620689655,0.8599360113757554
+Harbour,Iced Latte,Bakery,Cinnamon Roll,5,179,102,0.027932960893854747,0.6624493372768102
+Harbour,Iced Latte,Bakery,Almond Croissant,5,179,85,0.027932960893854747,0.7949392047321722
+Harbour,Iced Matcha,Bakery,Blueberry Muffin,5,145,55,0.034482758620689655,1.5166144200626959
+Harbour,Chai Latte,Bakery,Chocolate Cookie,5,81,116,0.06172839506172839,1.2872498935717327
+Harbour,Cappuccino,Bakery,Pistachio Cookie,5,124,99,0.04032258064516129,0.9852557836428805
+Uptown,Iced Latte,Bakery,Butter Croissant,5,70,55,0.07142857142857142,1.261038961038961
+Harbour,Chai Latte,Bakery,Butter Croissant,5,81,144,0.06172839506172839,1.0369513031550068
+Uptown,Iced Matcha,Bakery,Butter Croissant,5,77,55,0.06493506493506493,1.1463990554899646
+Garden,Iced Mocha,Bakery,Chocolate Croissant,5,54,70,0.09259259259259259,2.1693121693121693
+Garden,Iced Americano,Bakery,Butter Croissant,5,77,96,0.06493506493506493,1.1093073593073592
+Garden,Strawberry Matcha,Bakery,Chocolate Cookie,4,67,82,0.05970149253731343,1.1940298507462686
+Garden,Iced Americano,Bakery,Chocolate Croissant,4,77,70,0.05194805194805195,1.217068645640074
+Garden,Iced Latte,Bakery,Chocolate Cookie,4,93,82,0.043010752688172046,0.8602150537634409
+Garden,Iced Latte,Bakery,Blueberry Muffin,4,93,46,0.043010752688172046,1.533426834969612
+Uptown,Iced Latte,Bakery,Chocolate Croissant,4,70,26,0.05714285714285714,2.134065934065934
+Harbour,Flat White,Bakery,Pistachio Cookie,4,75,99,0.05333333333333334,1.3031649831649832
+Harbour,Coffee Frappe,Bakery,Butter Croissant,4,54,144,0.07407407407407407,1.2443415637860082
+Garden,Iced Americano,Bakery,Almond Croissant,4,77,46,0.05194805194805195,1.852060982495765
+Uptown,Iced Matcha,Bakery,Chocolate Cookie,4,77,42,0.05194805194805195,1.2009894867037725
+Uptown,Iced Matcha,Bakery,Blueberry Muffin,4,77,21,0.05194805194805195,2.401978973407545
+Harbour,Coffee Frappe,Bakery,Cinnamon Roll,4,54,102,0.07407407407407407,1.756717501815541
+Harbour,Cold Brew,Bakery,Banana Bread,4,116,97,0.034482758620689655,0.8599360113757554
+Harbour,Iced Americano,Bakery,Chocolate Croissant,4,107,99,0.037383177570093455,0.9134333994147078
+Uptown,Iced Matcha,Bakery,Chocolate Croissant,4,77,26,0.05194805194805195,1.94005994005994
+Garden,Iced Latte,Bakery,Banana Bread,4,93,61,0.043010752688172046,1.1563546624361007
+Harbour,Cappuccino,Bakery,Butter Croissant,4,124,144,0.03225806451612903,0.5418906810035843
+Harbour,Strawberry Matcha,Bakery,Butter Croissant,4,105,144,0.0380952380952381,0.6399470899470899
+Garden,Classic Matcha,Bakery,Chocolate Croissant,4,89,70,0.0449438202247191,1.0529695024077046
+Harbour,Iced Matcha,Bakery,Pistachio Cookie,4,145,99,0.027586206896551724,0.6740508533611982
+Harbour,Strawberry Matcha,Bakery,Banana Bread,4,105,97,0.0380952380952381,0.9500245459008345
+Garden,Americano,Bakery,Butter Croissant,4,59,96,0.06779661016949153,1.1581920903954803
+Harbour,Strawberry Matcha,Bakery,Chocolate Croissant,4,105,99,0.0380952380952381,0.9308321308321308
+Garden,Cappuccino,Bakery,Banana Bread,4,75,61,0.05333333333333334,1.433879781420765
+Harbour,Chai Latte,Bakery,Blueberry Muffin,4,81,55,0.04938271604938271,2.1719416386083052
+Garden,Classic Matcha,Bakery,Cinnamon Roll,4,89,59,0.0449438202247191,1.249285850314226
+Harbour,Chai Latte,Bakery,Pistachio Cookie,4,81,99,0.04938271604938271,1.2066342436712807
+Harbour,Strawberry Matcha,Bakery,Cinnamon Roll,4,105,102,0.0380952380952381,0.9034547152194211
+Harbour,Chai Latte,Bakery,Chocolate Croissant,4,81,99,0.04938271604938271,1.2066342436712807
+Harbour,Chai Latte,Bakery,Cinnamon Roll,4,81,102,0.04938271604938271,1.1711450012103606
+Garden,Iced Mocha,Bakery,Banana Bread,3,54,61,0.05555555555555555,1.493624772313297
+Uptown,Classic Matcha,Bakery,Cinnamon Roll,3,49,32,0.061224489795918366,1.8577806122448979
+Garden,Iced Matcha,Bakery,Almond Croissant,3,122,46,0.02459016393442623,0.8766928011404134
+Harbour,Caramel Latte,Bakery,Chocolate Cookie,3,73,116,0.0410958904109589,0.8569910250354275
+Harbour,Cappuccino,Bakery,Blueberry Muffin,3,124,55,0.024193548387096774,1.0640762463343107
+Harbour,Americano,Bakery,Cinnamon Roll,3,82,102,0.036585365853658534,0.8676470588235294
+Garden,Iced Matcha,Bakery,Cinnamon Roll,3,122,59,0.02459016393442623,0.6835232008891359
+Harbour,Cappuccino,Bakery,Chocolate Cookie,3,124,116,0.024193548387096774,0.5045189098998888
+Harbour,Cappuccino,Bakery,Chocolate Croissant,3,124,99,0.024193548387096774,0.5911534701857283
+Uptown,Caramel Latte,Bakery,Banana Bread,3,32,30,0.09375,3.034375
+Harbour,English Breakfast Tea,Bakery,Almond Croissant,3,38,85,0.07894736842105263,2.246749226006192
+Harbour,Chai Latte,Bakery,Banana Bread,3,81,97,0.037037037037037035,0.923634975181367
+Harbour,Americano,Bakery,Chocolate Cookie,3,82,116,0.036585365853658534,0.7629310344827587
+Harbour,English Breakfast Tea,Bakery,Butter Croissant,3,38,144,0.07894736842105263,1.3262061403508771
+Uptown,Iced Americano,Bakery,Banana Bread,3,45,30,0.06666666666666667,2.1577777777777776
+Uptown,Cold Brew,Bakery,Butter Croissant,3,42,55,0.07142857142857142,1.261038961038961
+Garden,Americano,Bakery,Banana Bread,3,59,61,0.05084745762711865,1.3670464017782717
+Uptown,Chai Latte,Bakery,Butter Croissant,3,37,55,0.08108108108108109,1.4314496314496314
+Garden,Vanilla Latte,Bakery,Chocolate Croissant,3,53,70,0.05660377358490566,1.326145552560647
+Garden,Vanilla Latte,Bakery,Butter Croissant,3,53,96,0.05660377358490566,0.9669811320754716
+Harbour,Classic Matcha,Bakery,Almond Croissant,3,145,85,0.020689655172413793,0.5888032454361055
+Garden,Spanish Latte,Bakery,Chocolate Cookie,3,59,82,0.05084745762711865,1.0169491525423728
+Uptown,Cold Brew,Bakery,Pistachio Cookie,3,42,38,0.07142857142857142,1.8251879699248121
+Harbour,Classic Matcha,Bakery,Blueberry Muffin,3,145,55,0.020689655172413793,0.9099686520376176
+Garden,Strawberry Matcha,Bakery,Pistachio Cookie,3,67,60,0.04477611940298507,1.2238805970149254
+Garden,Strawberry Matcha,Bakery,Cinnamon Roll,3,67,59,0.04477611940298507,1.2446243359473816
+Garden,Iced Matcha,Bakery,Blueberry Muffin,3,122,46,0.02459016393442623,0.8766928011404134
+Uptown,Classic Matcha,Bakery,Banana Bread,3,49,30,0.061224489795918366,1.9816326530612245
+Harbour,Iced Latte,Meals,Chicken Salad Bowl,3,179,31,0.01675977653631285,1.3078032077851864
+Garden,Cold Brew,Bakery,Butter Croissant,3,67,96,0.04477611940298507,0.7649253731343284
+Harbour,Strawberry Matcha,Bakery,Pistachio Cookie,3,105,99,0.02857142857142857,0.6981240981240981
+Harbour,Mint Tea,Bakery,Chocolate Cookie,3,41,116,0.07317073170731707,1.5258620689655173
+Harbour,Mint Tea,Bakery,Almond Croissant,3,41,85,0.07317073170731707,2.0823529411764707
+Harbour,Iced Latte,Bakery,Butter Croissant,3,179,144,0.01675977653631285,0.2815409683426443
+Harbour,Iced Latte,Bakery,Chocolate Croissant,3,179,99,0.01675977653631285,0.409514135771119
+Harbour,Iced Latte,Bakery,Pistachio Cookie,3,179,99,0.01675977653631285,0.409514135771119
+Garden,Cold Brew,Bakery,Chocolate Cookie,3,67,82,0.04477611940298507,0.8955223880597015
+Harbour,Vanilla Latte,Bakery,Butter Croissant,3,94,144,0.031914893617021274,0.5361258865248227
+Harbour,Iced Matcha,Bakery,Almond Croissant,3,145,85,0.020689655172413793,0.5888032454361055
+Garden,Caramel Latte,Bakery,Almond Croissant,3,53,46,0.05660377358490566,2.0180475799835933
+Harbour,Vanilla Latte,Bakery,Cinnamon Roll,3,94,102,0.031914893617021274,0.7568836045056321
+Garden,Coffee Frappe,Bakery,Butter Croissant,3,43,96,0.06976744186046512,1.191860465116279
+Harbour,Vanilla Latte,Bakery,Chocolate Croissant,3,94,99,0.031914893617021274,0.779819471308833
+Garden,Chai Latte,Bakery,Banana Bread,3,71,61,0.04225352112676056,1.1359963057030709
+Harbour,Iced Mocha,Bakery,Blueberry Muffin,3,76,55,0.039473684210526314,1.7361244019138755
+Harbour,Iced Mocha,Bakery,Butter Croissant,3,76,144,0.039473684210526314,0.6631030701754386
+Garden,Chai Latte,Bakery,Chocolate Croissant,3,71,70,0.04225352112676056,0.9899396378269618
+Garden,Chai Latte,Bakery,Chocolate Cookie,3,71,82,0.04225352112676056,0.8450704225352113
+Garden,Chai Latte,Bakery,Butter Croissant,3,71,96,0.04225352112676056,0.721830985915493
+Uptown,Iced Matcha,Bakery,Cinnamon Roll,3,77,32,0.03896103896103896,1.182224025974026
+Harbour,Spanish Latte,Bakery,Banana Bread,3,84,97,0.03571428571428571,0.8906480117820325
+Harbour,Iced Americano,Bakery,Blueberry Muffin,3,107,55,0.028037383177570093,1.2331350892098556
+Harbour,Flat White,Bakery,Chocolate Cookie,3,75,116,0.04,0.8341379310344827
+Garden,Iced Latte,Bakery,Chocolate Croissant,3,93,70,0.03225806451612903,0.7557603686635944
+Harbour,Flat White,Bakery,Cinnamon Roll,3,75,102,0.04,0.9486274509803921
+Garden,Iced Americano,Bakery,Chocolate Cookie,3,77,82,0.03896103896103896,0.7792207792207793
+Garden,Cappuccino,Bakery,Chocolate Cookie,3,75,82,0.04,0.8
+Harbour,Iced Americano,Bakery,Banana Bread,3,107,97,0.028037383177570093,0.6992003083148666
+Harbour,Iced Mocha,Bakery,Chocolate Cookie,3,76,116,0.039473684210526314,0.8231624319419237
+Harbour,Spanish Latte,Bakery,Butter Croissant,3,84,144,0.03571428571428571,0.5999503968253969
+Garden,Flat White,Bakery,Butter Croissant,3,54,96,0.05555555555555555,0.9490740740740741
+Garden,Flat White,Bakery,Chocolate Cookie,3,54,82,0.05555555555555555,1.1111111111111112
+Harbour,Iced Americano,Bakery,Chocolate Cookie,3,107,116,0.028037383177570093,0.5846761198839833
+Harbour,Iced Mocha,Bakery,Chocolate Croissant,2,76,99,0.02631578947368421,0.6430090377458798
+Harbour,Strawberry Matcha,Bakery,Almond Croissant,2,105,85,0.01904761904761905,0.5420728291316527
+Harbour,Spanish Latte,Bakery,Pistachio Cookie,2,84,99,0.023809523809523808,0.5817700817700817
+Harbour,Spanish Latte,Bakery,Cinnamon Roll,2,84,102,0.023809523809523808,0.5646591970121382
+Harbour,Caramel Latte,Bakery,Chocolate Croissant,2,73,99,0.0273972602739726,0.6694340666943407
+Harbour,Mint Tea,Bakery,Banana Bread,2,41,97,0.04878048780487805,1.2164948453608246
+Harbour,Spanish Latte,Bakery,Chocolate Cookie,2,84,116,0.023809523809523808,0.4965106732348112
+Harbour,Spanish Latte,Bakery,Chocolate Croissant,2,84,99,0.023809523809523808,0.5817700817700817
+Harbour,Iced Mocha,Bakery,Cinnamon Roll,2,76,102,0.02631578947368421,0.6240970072239422
+Harbour,Caramel Latte,Meals,Quinoa Bowl,2,73,29,0.0273972602739726,2.2853094000944734
+Harbour,Vanilla Latte,Bakery,Almond Croissant,2,94,85,0.02127659574468085,0.6055068836045057
+Harbour,Caramel Latte,Bakery,Cinnamon Roll,2,73,102,0.0273972602739726,0.6497448294386248
+Harbour,Flat White,Bakery,Blueberry Muffin,2,75,55,0.02666666666666667,1.1728484848484848
+Uptown,Classic Matcha,Bakery,Almond Croissant,2,49,20,0.04081632653061224,1.9816326530612245
+Harbour,Cold Brew,Meals,Chicken Salad Bowl,2,116,31,0.017241379310344827,1.3453837597330367
+Uptown,Cappuccino,Bakery,Banana Bread,2,61,30,0.03278688524590164,1.0612021857923497
+Harbour,Flat White,Bakery,Chocolate Croissant,2,75,99,0.02666666666666667,0.6515824915824916
+Uptown,Classic Matcha,Bakery,Blueberry Muffin,2,49,21,0.04081632653061224,1.8872691933916423
+Harbour,Espresso,Bakery,Cinnamon Roll,2,45,102,0.044444444444444446,1.0540305010893247
+Uptown,Cappuccino,Bakery,Blueberry Muffin,2,61,21,0.03278688524590164,1.5160031225604995
+Harbour,English Breakfast Tea,Bakery,Pistachio Cookie,2,38,99,0.05263157894736842,1.2860180754917596
+Harbour,Iced Americano,Bakery,Butter Croissant,2,107,144,0.018691588785046728,0.3139927310488058
+Uptown,Caramel Latte,Bakery,Butter Croissant,2,32,55,0.0625,1.103409090909091
+Uptown,Caramel Latte,Bakery,Cinnamon Roll,2,32,32,0.0625,1.896484375
+Harbour,Cold Brew,Bakery,Pistachio Cookie,2,116,99,0.017241379310344827,0.4212817833507489
+Harbour,Iced Mocha,Bakery,Banana Bread,2,76,97,0.02631578947368421,0.6562669560499186
+Harbour,Cold Brew,Bakery,Chocolate Croissant,2,116,99,0.017241379310344827,0.4212817833507489
+Harbour,Iced Americano,Bakery,Cinnamon Roll,2,107,102,0.018691588785046728,0.44328385559831407
+Uptown,Americano,Bakery,Almond Croissant,2,30,20,0.06666666666666667,3.236666666666667
+Harbour,Iced Latte,Bakery,Banana Bread,2,179,97,0.0111731843575419,0.27863848413292636
+Harbour,Coffee Frappe,Bakery,Pistachio Cookie,2,54,99,0.037037037037037035,0.9049756827534605
+Harbour,Coffee Frappe,Bakery,Blueberry Muffin,2,54,55,0.037037037037037035,1.628956228956229
+Uptown,Chai Latte,Bakery,Pistachio Cookie,2,37,38,0.05405405405405406,1.3812233285917497
+Harbour,Flat White,Bakery,Butter Croissant,2,75,144,0.02666666666666667,0.44796296296296295
+Harbour,Iced Mocha,Bakery,Almond Croissant,2,76,85,0.02631578947368421,0.7489164086687307
+Harbour,Cold Brew,Bakery,Butter Croissant,2,116,144,0.017241379310344827,0.28963122605363983
+Garden,Vanilla Latte,Meals,Chicken Salad Bowl,2,53,29,0.03773584905660377,2.1340273259596616
+Garden,Iced Latte,Bakery,Butter Croissant,2,93,96,0.021505376344086023,0.3673835125448029
+Garden,Coffee Frappe,Bakery,Pistachio Cookie,2,43,60,0.046511627906976744,1.2713178294573644
+Garden,Mint Tea,Meals,Quinoa Bowl,2,25,26,0.08,5.046153846153846
+Garden,Chai Latte,Bakery,Cinnamon Roll,2,71,59,0.028169014084507043,0.7830031033659585
+Garden,Mint Tea,Bakery,Chocolate Croissant,2,25,70,0.08,1.8742857142857143
+Garden,Mint Tea,Bakery,Chocolate Cookie,2,25,82,0.08,1.6
+Garden,Chai Latte,Bakery,Pistachio Cookie,2,71,60,0.028169014084507043,0.7699530516431925
+Uptown,Iced Americano,Bakery,Chocolate Cookie,2,45,42,0.044444444444444446,1.0275132275132275
+Garden,Classic Matcha,Bakery,Almond Croissant,2,89,46,0.02247191011235955,0.8011724474841231
+Garden,Classic Matcha,Bakery,Banana Bread,2,89,61,0.02247191011235955,0.6041628292503224
+Garden,Classic Matcha,Bakery,Butter Croissant,2,89,96,0.02247191011235955,0.3838951310861423
+Garden,Classic Matcha,Bakery,Pistachio Cookie,2,89,60,0.02247191011235955,0.6142322097378277
+Garden,Classic Matcha,Meals,Chicken Salad Bowl,2,89,29,0.02247191011235955,1.27082526152654
+Garden,Iced Mocha,Bakery,Blueberry Muffin,2,54,46,0.037037037037037035,1.320450885668277
+Garden,Iced Matcha,Bakery,Banana Bread,2,122,61,0.01639344262295082,0.44074173609244827
+Garden,Caramel Latte,Bakery,Pistachio Cookie,2,53,60,0.03773584905660377,1.0314465408805031
+Garden,Iced Latte,Meals,Soup of the Day,2,93,23,0.021505376344086023,1.533426834969612
+Garden,Iced Latte,Meals,Chicken Salad Bowl,2,93,29,0.021505376344086023,1.2161661104931405
+Uptown,Classic Matcha,Bakery,Chocolate Cookie,2,49,42,0.04081632653061224,0.9436345966958212
+Uptown,Iced Latte,Meals,Chicken Salad Bowl,2,70,17,0.02857142857142857,1.6319327731092437
+Garden,Cold Brew,Bakery,Chocolate Croissant,2,67,70,0.029850746268656716,0.6993603411513859
+Uptown,Iced Mocha,Bakery,Chocolate Cookie,2,25,42,0.08,1.8495238095238096
+Uptown,Iced Matcha,Bakery,Almond Croissant,2,77,20,0.025974025974025976,1.261038961038961
+Garden,Flat White,Bakery,Pistachio Cookie,2,54,60,0.037037037037037035,1.0123456790123457
+Garden,Espresso,Bakery,Cinnamon Roll,2,41,59,0.04878048780487805,1.3559322033898304
+Uptown,Iced Matcha,Bakery,Pistachio Cookie,2,77,38,0.025974025974025976,0.6637047163362952
+Uptown,Iced Mocha,Bakery,Blueberry Muffin,2,25,21,0.08,3.699047619047619
+Garden,English Breakfast Tea,Bakery,Butter Croissant,2,20,96,0.1,1.7083333333333333
+Garden,Caramel Latte,Meals,Soup of the Day,2,53,23,0.03773584905660377,2.6907301066447906
+Garden,Chai Latte,Bakery,Blueberry Muffin,2,71,46,0.028169014084507043,1.0042865890998163
+Garden,English Breakfast Tea,Bakery,Chocolate Cookie,2,20,82,0.1,2.0
+Garden,Cappuccino,Meals,Quinoa Bowl,2,75,26,0.02666666666666667,1.682051282051282
+Garden,Cappuccino,Bakery,Butter Croissant,2,75,96,0.02666666666666667,0.45555555555555555
+Garden,Vanilla Latte,Meals,Soup of the Day,2,53,23,0.03773584905660377,2.6907301066447906
+Garden,Vanilla Latte,Bakery,Almond Croissant,2,53,46,0.03773584905660377,1.3453650533223953
+Uptown,Vanilla Latte,Bakery,Chocolate Cookie,2,34,42,0.058823529411764705,1.3599439775910365
+Harbour,Americano,Bakery,Banana Bread,2,82,97,0.024390243902439025,0.6082474226804123
+Uptown,English Breakfast Tea,Bakery,Butter Croissant,2,13,55,0.15384615384615385,2.716083916083916
+Garden,Cappuccino,Bakery,Cinnamon Roll,2,75,59,0.02666666666666667,0.7412429378531074
+Uptown,Coffee Frappe,Bakery,Blueberry Muffin,2,22,21,0.09090909090909091,4.203463203463204
+Garden,Vanilla Latte,Bakery,Cinnamon Roll,2,53,59,0.03773584905660377,1.0489286856411897
+Garden,Strawberry Matcha,Bakery,Banana Bread,2,67,61,0.029850746268656716,0.802544653780279
+Garden,Americano,Meals,Chicken Salad Bowl,2,59,29,0.03389830508474576,1.9170075978959673
+Garden,Caramel Latte,Bakery,Butter Croissant,2,53,96,0.03773584905660377,0.6446540880503144
+Uptown,Strawberry Matcha,Bakery,Butter Croissant,2,39,55,0.05128205128205128,0.9053613053613053
+Garden,Spanish Latte,Bakery,Pistachio Cookie,2,59,60,0.03389830508474576,0.9265536723163842
+Harbour,Cappuccino,Bakery,Almond Croissant,2,124,85,0.016129032258064516,0.4590132827324478
+Harbour,Cappuccino,Bakery,Banana Bread,2,124,97,0.016129032258064516,0.40222813435317595
+Garden,Americano,Bakery,Blueberry Muffin,2,59,46,0.03389830508474576,1.208548268238762
+Garden,Spanish Latte,Bakery,Butter Croissant,2,59,96,0.03389830508474576,0.5790960451977402
+Garden,Vanilla Latte,Bakery,Chocolate Cookie,2,53,82,0.03773584905660377,0.7547169811320755
+Uptown,Iced Mocha,Bakery,Butter Croissant,1,25,55,0.04,0.7061818181818181
+Uptown,Vanilla Latte,Meals,Quinoa Bowl,1,34,14,0.029411764705882353,2.0399159663865545
+Uptown,Vanilla Latte,Bakery,Pistachio Cookie,1,34,38,0.029411764705882353,0.7515479876160991
+Uptown,Iced Mocha,Bakery,Chocolate Croissant,1,25,26,0.04,1.4938461538461538
+Harbour,Vanilla Latte,Meals,Quinoa Bowl,1,94,29,0.010638297872340425,0.8873807776962582
+Uptown,Spanish Latte,Bakery,Pistachio Cookie,1,26,38,0.038461538461538464,0.9827935222672065
+Harbour,Vanilla Latte,Bakery,Pistachio Cookie,1,94,99,0.010638297872340425,0.259939823769611
+Uptown,Iced Mocha,Bakery,Cinnamon Roll,1,25,32,0.04,1.21375
+Harbour,Vanilla Latte,Bakery,Chocolate Cookie,1,94,116,0.010638297872340425,0.22184519442406456
+Uptown,Mint Tea,Bakery,Pistachio Cookie,1,12,38,0.08333333333333333,2.129385964912281
+Uptown,Spanish Latte,Bakery,Blueberry Muffin,1,26,21,0.038461538461538464,1.7783882783882783
+Uptown,Vanilla Latte,Bakery,Butter Croissant,1,34,55,0.029411764705882353,0.5192513368983958
+Uptown,Strawberry Matcha,Bakery,Cinnamon Roll,1,39,32,0.02564102564102564,0.7780448717948718
+Uptown,Strawberry Matcha,Bakery,Chocolate Cookie,1,39,42,0.02564102564102564,0.5927960927960928
+Uptown,Spanish Latte,Bakery,Butter Croissant,1,26,55,0.038461538461538464,0.679020979020979
+Harbour,Strawberry Matcha,Meals,Chicken Salad Bowl,1,105,31,0.009523809523809525,0.7431643625192013
+Uptown,Iced Matcha,Meals,Quinoa Bowl,1,77,14,0.012987012987012988,0.9007421150278293
+Uptown,Spanish Latte,Bakery,Chocolate Croissant,1,26,26,0.038461538461538464,1.4363905325443787
+Uptown,Strawberry Matcha,Bakery,Banana Bread,1,39,30,0.02564102564102564,0.82991452991453
+Uptown,Mint Tea,Bakery,Chocolate Cookie,1,12,42,0.08333333333333333,1.9265873015873016
+Uptown,Classic Matcha,Bakery,Butter Croissant,1,49,55,0.02040816326530612,0.3602968460111317
+Harbour,Vanilla Latte,Meals,Soup of the Day,1,94,24,0.010638297872340425,1.0722517730496455
+Uptown,Iced Matcha,Meals,Chicken Salad Bowl,1,77,17,0.012987012987012988,0.7417876241405653
+Uptown,Flat White,Bakery,Chocolate Croissant,1,38,26,0.02631578947368421,0.9827935222672065
+Uptown,Flat White,Bakery,Chocolate Cookie,1,38,42,0.02631578947368421,0.6083959899749374
+Uptown,Chai Latte,Bakery,Chocolate Cookie,1,37,42,0.02702702702702703,0.6248391248391248
+Uptown,Flat White,Bakery,Almond Croissant,1,38,20,0.02631578947368421,1.2776315789473685
+Uptown,Espresso,Meals,Soup of the Day,1,24,13,0.041666666666666664,3.1121794871794872
+Uptown,Chai Latte,Bakery,Chocolate Croissant,1,37,26,0.02702702702702703,1.0093555093555093
+Uptown,Chai Latte,Bakery,Cinnamon Roll,1,37,32,0.02702702702702703,0.8201013513513513
+Uptown,Espresso,Meals,Quinoa Bowl,1,24,14,0.041666666666666664,2.8898809523809526
+Uptown,Espresso,Bakery,Cinnamon Roll,1,24,32,0.041666666666666664,1.2643229166666667
+Uptown,Espresso,Bakery,Chocolate Cookie,1,24,42,0.041666666666666664,0.9632936507936508
+Uptown,English Breakfast Tea,Bakery,Pistachio Cookie,1,13,38,0.07692307692307693,1.965587044534413
+Uptown,English Breakfast Tea,Bakery,Chocolate Croissant,1,13,26,0.07692307692307693,2.8727810650887573
+Uptown,Cold Brew,Meals,Chicken Salad Bowl,1,42,17,0.023809523809523808,1.3599439775910365
+Uptown,Cold Brew,Bakery,Chocolate Cookie,1,42,42,0.023809523809523808,0.550453514739229
+Uptown,Cold Brew,Bakery,Almond Croissant,1,42,20,0.023809523809523808,1.1559523809523808
+Uptown,Coffee Frappe,Bakery,Chocolate Croissant,1,22,26,0.045454545454545456,1.6975524475524475
+Uptown,Coffee Frappe,Bakery,Banana Bread,1,22,30,0.045454545454545456,1.4712121212121212
+Uptown,Classic Matcha,Bakery,Pistachio Cookie,1,49,38,0.02040816326530612,0.5214822771213748
+Uptown,Classic Matcha,Bakery,Chocolate Croissant,1,49,26,0.02040816326530612,0.7621664050235479
+Uptown,Flat White,Bakery,Cinnamon Roll,1,38,32,0.02631578947368421,0.7985197368421053
+Uptown,Iced Americano,Bakery,Almond Croissant,1,45,20,0.022222222222222223,1.0788888888888888
+Uptown,Chai Latte,Bakery,Almond Croissant,1,37,20,0.02702702702702703,1.3121621621621622
+Uptown,Iced Latte,Bakery,Almond Croissant,1,70,20,0.014285714285714285,0.6935714285714286
+Uptown,Americano,Bakery,Banana Bread,1,30,30,0.03333333333333333,1.0788888888888888
+Uptown,Iced Matcha,Bakery,Banana Bread,1,77,30,0.012987012987012988,0.42034632034632036
+Uptown,Iced Latte,Meals,Soup of the Day,1,70,13,0.014285714285714285,1.067032967032967
+Uptown,Americano,Bakery,Chocolate Cookie,1,30,42,0.03333333333333333,0.7706349206349207
+Uptown,Iced Latte,Bakery,Cinnamon Roll,1,70,32,0.014285714285714285,0.43348214285714287
+Uptown,Iced Latte,Bakery,Chocolate Cookie,1,70,42,0.014285714285714285,0.3302721088435374
+Uptown,Americano,Bakery,Pistachio Cookie,1,30,38,0.03333333333333333,0.8517543859649123
+Uptown,Iced Latte,Bakery,Banana Bread,1,70,30,0.014285714285714285,0.4623809523809524
+Uptown,Cappuccino,Bakery,Cinnamon Roll,1,61,32,0.01639344262295082,0.4974385245901639
+Uptown,Caramel Latte,Bakery,Pistachio Cookie,1,32,38,0.03125,0.7985197368421053
+Uptown,Cappuccino,Bakery,Pistachio Cookie,1,61,38,0.01639344262295082,0.4188955996548749
+Uptown,Cappuccino,Meals,Soup of the Day,1,61,13,0.01639344262295082,1.2244640605296342
+Uptown,Caramel Latte,Bakery,Blueberry Muffin,1,32,21,0.03125,1.4449404761904763
+Uptown,Iced Americano,Meals,Chicken Salad Bowl,1,45,17,0.022222222222222223,1.269281045751634
+Uptown,Iced Americano,Bakery,Pistachio Cookie,1,45,38,0.022222222222222223,0.5678362573099415
+Uptown,Caramel Latte,Bakery,Chocolate Cookie,1,32,42,0.03125,0.7224702380952381
+Uptown,Iced Americano,Bakery,Cinnamon Roll,1,45,32,0.022222222222222223,0.6743055555555556
+Uptown,Iced Americano,Bakery,Blueberry Muffin,1,45,21,0.022222222222222223,1.0275132275132275
+Harbour,Strawberry Matcha,Bakery,Chocolate Cookie,1,105,116,0.009523809523809525,0.19860426929392447
+Garden,Americano,Bakery,Almond Croissant,1,59,46,0.01694915254237288,0.604274134119381
+Harbour,Strawberry Matcha,Bakery,Blueberry Muffin,1,105,55,0.009523809523809525,0.4188744588744589
+Garden,Flat White,Bakery,Chocolate Croissant,1,54,70,0.018518518518518517,0.43386243386243384
+Garden,Flat White,Meals,Quinoa Bowl,1,54,26,0.018518518518518517,1.168091168091168
+Garden,Iced Americano,Bakery,Banana Bread,1,77,61,0.012987012987012988,0.3491590376836278
+Garden,Iced Americano,Bakery,Blueberry Muffin,1,77,46,0.012987012987012988,0.46301524562394125
+Garden,Iced Americano,Meals,Quinoa Bowl,1,77,26,0.012987012987012988,0.8191808191808192
+Garden,Iced Americano,Meals,Soup of the Day,1,77,23,0.012987012987012988,0.9260304912478825
+Garden,Iced Latte,Bakery,Almond Croissant,1,93,46,0.010752688172043012,0.383356708742403
+Garden,Iced Latte,Bakery,Pistachio Cookie,1,93,60,0.010752688172043012,0.2939068100358423
+Garden,Iced Matcha,Bakery,Chocolate Cookie,1,122,82,0.00819672131147541,0.16393442622950818
+Garden,Iced Matcha,Meals,Soup of the Day,1,122,23,0.00819672131147541,0.5844618674269423
+Garden,Iced Mocha,Bakery,Almond Croissant,1,54,46,0.018518518518518517,0.6602254428341385
+Garden,Iced Mocha,Bakery,Chocolate Cookie,1,54,82,0.018518518518518517,0.37037037037037035
+Garden,Iced Mocha,Bakery,Cinnamon Roll,1,54,59,0.018518518518518517,0.514752040175769
+Garden,Iced Mocha,Bakery,Pistachio Cookie,1,54,60,0.018518518518518517,0.5061728395061729
+Garden,Iced Mocha,Meals,Soup of the Day,1,54,23,0.018518518518518517,1.320450885668277
+Garden,Mint Tea,Bakery,Almond Croissant,1,25,46,0.04,1.4260869565217391
+Garden,Mint Tea,Bakery,Banana Bread,1,25,61,0.04,1.0754098360655737
+Garden,Mint Tea,Bakery,Pistachio Cookie,1,25,60,0.04,1.0933333333333333
+Garden,Mint Tea,Meals,Chicken Salad Bowl,1,25,29,0.04,2.2620689655172415
+Garden,Spanish Latte,Bakery,Almond Croissant,1,59,46,0.01694915254237288,0.604274134119381
+Garden,Spanish Latte,Bakery,Banana Bread,1,59,61,0.01694915254237288,0.4556821339260906
+Garden,Spanish Latte,Bakery,Blueberry Muffin,1,59,46,0.01694915254237288,0.604274134119381
+Garden,Spanish Latte,Bakery,Cinnamon Roll,1,59,59,0.01694915254237288,0.47112898592358515
+Garden,Spanish Latte,Meals,Chicken Salad Bowl,1,59,29,0.01694915254237288,0.9585037989479837
+Garden,Flat White,Meals,Chicken Salad Bowl,1,54,29,0.018518518518518517,1.0472541507024267
+Garden,Flat White,Bakery,Blueberry Muffin,1,54,46,0.018518518518518517,0.6602254428341385
+Harbour,Spanish Latte,Meals,Chicken Salad Bowl,1,84,31,0.011904761904761904,0.9289554531490015
+Garden,Flat White,Bakery,Banana Bread,1,54,61,0.018518518518518517,0.4978749241044323
+Garden,Americano,Bakery,Chocolate Croissant,1,59,70,0.01694915254237288,0.39709443099273606
+Garden,Cappuccino,Bakery,Almond Croissant,1,75,46,0.013333333333333334,0.4753623188405797
+Garden,Cappuccino,Bakery,Blueberry Muffin,1,75,46,0.013333333333333334,0.4753623188405797
+Garden,Cappuccino,Bakery,Chocolate Croissant,1,75,70,0.013333333333333334,0.31238095238095237
+Garden,Cappuccino,Bakery,Pistachio Cookie,1,75,60,0.013333333333333334,0.36444444444444446
+Garden,Caramel Latte,Bakery,Banana Bread,1,53,61,0.018867924528301886,0.5072687905969687
+Garden,Caramel Latte,Bakery,Chocolate Cookie,1,53,82,0.018867924528301886,0.37735849056603776
+Garden,Caramel Latte,Bakery,Chocolate Croissant,1,53,70,0.018867924528301886,0.4420485175202156
+Garden,Caramel Latte,Meals,Chicken Salad Bowl,1,53,29,0.018867924528301886,1.0670136629798308
+Garden,Chai Latte,Bakery,Almond Croissant,1,71,46,0.014084507042253521,0.5021432945499081
+Garden,Chai Latte,Meals,Chicken Salad Bowl,1,71,29,0.014084507042253521,0.7965031568722681
+Garden,Classic Matcha,Meals,Quinoa Bowl,1,89,26,0.011235955056179775,0.7087294727744166
+Garden,Classic Matcha,Meals,Soup of the Day,1,89,23,0.011235955056179775,0.8011724474841231
+Garden,Coffee Frappe,Bakery,Almond Croissant,1,43,46,0.023255813953488372,0.8291203235591507
+Garden,Coffee Frappe,Meals,Quinoa Bowl,1,43,26,0.023255813953488372,1.4669051878354205
+Garden,Cold Brew,Bakery,Banana Bread,1,67,61,0.014925373134328358,0.4012723268901395
+Garden,Cold Brew,Bakery,Pistachio Cookie,1,67,60,0.014925373134328358,0.4079601990049751
+Garden,Cold Brew,Meals,Chicken Salad Bowl,1,67,29,0.014925373134328358,0.8440555841482243
+Garden,English Breakfast Tea,Bakery,Blueberry Muffin,1,20,46,0.05,1.7826086956521738
+Garden,English Breakfast Tea,Bakery,Chocolate Croissant,1,20,70,0.05,1.1714285714285715
+Garden,Espresso,Bakery,Blueberry Muffin,1,41,46,0.024390243902439025,0.8695652173913043
+Garden,Espresso,Bakery,Butter Croissant,1,41,96,0.024390243902439025,0.4166666666666667
+Garden,Espresso,Meals,Chicken Salad Bowl,1,41,29,0.024390243902439025,1.3793103448275863
+Garden,Spanish Latte,Meals,Quinoa Bowl,1,59,26,0.01694915254237288,1.0691003911342893
+Garden,Strawberry Matcha,Bakery,Almond Croissant,1,67,46,0.014925373134328358,0.5321219987021415
+Garden,Strawberry Matcha,Bakery,Butter Croissant,1,67,96,0.014925373134328358,0.25497512437810943
+Garden,Strawberry Matcha,Bakery,Chocolate Croissant,1,67,70,0.014925373134328358,0.34968017057569295
+Harbour,English Breakfast Tea,Bakery,Chocolate Croissant,1,38,99,0.02631578947368421,0.6430090377458798
+Harbour,Espresso,Bakery,Almond Croissant,1,45,85,0.022222222222222223,0.6324183006535947
+Harbour,Espresso,Bakery,Banana Bread,1,45,97,0.022222222222222223,0.5541809851088202
+Harbour,Espresso,Bakery,Blueberry Muffin,1,45,55,0.022222222222222223,0.9773737373737373
+Harbour,Espresso,Bakery,Butter Croissant,1,45,144,0.022222222222222223,0.37330246913580245
+Harbour,Espresso,Bakery,Chocolate Cookie,1,45,116,0.022222222222222223,0.46340996168582377
+Harbour,Espresso,Bakery,Chocolate Croissant,1,45,99,0.022222222222222223,0.5429854096520763
+Harbour,Espresso,Meals,Soup of the Day,1,45,24,0.022222222222222223,2.2398148148148147
+Harbour,Flat White,Bakery,Almond Croissant,1,75,85,0.013333333333333334,0.37945098039215686
+Harbour,Iced Americano,Bakery,Almond Croissant,1,107,85,0.009345794392523364,0.26597031335898846
+Harbour,Iced Americano,Bakery,Pistachio Cookie,1,107,99,0.009345794392523364,0.22835834985367695
+Harbour,Iced Americano,Meals,Quinoa Bowl,1,107,29,0.009345794392523364,0.779568159845311
+Harbour,Iced Americano,Meals,Soup of the Day,1,107,24,0.009345794392523364,0.9419781931464174
+Harbour,Iced Latte,Meals,Quinoa Bowl,1,179,29,0.00558659217877095,0.4659988441533423
+Harbour,Iced Latte,Meals,Soup of the Day,1,179,24,0.00558659217877095,0.5630819366852886
+Harbour,Iced Matcha,Bakery,Banana Bread,1,145,97,0.006896551724137931,0.17198720227515107
+Harbour,Iced Matcha,Meals,Soup of the Day,1,145,24,0.006896551724137931,0.6951149425287356
+Harbour,Iced Mocha,Bakery,Pistachio Cookie,1,76,99,0.013157894736842105,0.3215045188729399
+Harbour,Iced Mocha,Meals,Quinoa Bowl,1,76,29,0.013157894736842105,1.0975499092558985
+Harbour,Iced Mocha,Meals,Soup of the Day,1,76,24,0.013157894736842105,1.3262061403508771
+Harbour,Mint Tea,Bakery,Cinnamon Roll,1,41,102,0.024390243902439025,0.5784313725490197
+Harbour,Spanish Latte,Bakery,Almond Croissant,1,84,85,0.011904761904761904,0.33879551820728293
+Harbour,Spanish Latte,Bakery,Blueberry Muffin,1,84,55,0.011904761904761904,0.5235930735930736
+Harbour,English Breakfast Tea,Bakery,Chocolate Cookie,1,38,116,0.02631578947368421,0.5487749546279492
+Harbour,English Breakfast Tea,Bakery,Banana Bread,1,38,97,0.02631578947368421,0.6562669560499186
+Harbour,Cold Brew,Meals,Soup of the Day,1,116,24,0.008620689655172414,0.8688936781609196
+Harbour,Americano,Meals,Soup of the Day,1,82,24,0.012195121951219513,1.2291666666666667
+Garden,Strawberry Matcha,Meals,Chicken Salad Bowl,1,67,29,0.014925373134328358,0.8440555841482243
+Garden,Strawberry Matcha,Meals,Quinoa Bowl,1,67,26,0.014925373134328358,0.9414466130884042
+Garden,Strawberry Matcha,Meals,Soup of the Day,1,67,23,0.014925373134328358,1.064243997404283
+Garden,Vanilla Latte,Bakery,Blueberry Muffin,1,53,46,0.018867924528301886,0.6726825266611977
+Garden,Vanilla Latte,Meals,Quinoa Bowl,1,53,26,0.018867924528301886,1.1901306240928882
+Harbour,Americano,Bakery,Almond Croissant,1,82,85,0.012195121951219513,0.34705882352941175
+Harbour,Americano,Bakery,Butter Croissant,1,82,144,0.012195121951219513,0.2048611111111111
+Harbour,Americano,Bakery,Chocolate Croissant,1,82,99,0.012195121951219513,0.29797979797979796
+Harbour,Americano,Bakery,Pistachio Cookie,1,82,99,0.012195121951219513,0.29797979797979796
+Harbour,Americano,Meals,Chicken Salad Bowl,1,82,31,0.012195121951219513,0.9516129032258065
+Harbour,Cappuccino,Meals,Soup of the Day,1,124,24,0.008064516129032258,0.8128360215053764
+Harbour,Cold Brew,Bakery,Cinnamon Roll,1,116,102,0.008620689655172414,0.20444557133198107
+Harbour,Caramel Latte,Bakery,Almond Croissant,1,73,85,0.0136986301369863,0.3898468976631749
+Harbour,Caramel Latte,Bakery,Banana Bread,1,73,97,0.0136986301369863,0.34161841547803984
+Harbour,Caramel Latte,Bakery,Blueberry Muffin,1,73,55,0.0136986301369863,0.6024906600249066
+Harbour,Caramel Latte,Bakery,Butter Croissant,1,73,144,0.0136986301369863,0.2301179604261796
+Harbour,Chai Latte,Meals,Quinoa Bowl,1,81,29,0.012345679012345678,1.0297999148573862
+Harbour,Classic Matcha,Meals,Chicken Salad Bowl,1,145,31,0.006896551724137931,0.5381535038932147
+Harbour,Classic Matcha,Meals,Soup of the Day,1,145,24,0.006896551724137931,0.6951149425287356
+Harbour,Coffee Frappe,Bakery,Banana Bread,1,54,97,0.018518518518518517,0.4618174875906835
+Harbour,Cold Brew,Bakery,Almond Croissant,1,116,85,0.008620689655172414,0.2453346855983773
+Harbour,Cold Brew,Bakery,Blueberry Muffin,1,116,55,0.008620689655172414,0.37915360501567397
+Uptown,Vanilla Latte,Meals,Soup of the Day,1,34,13,0.029411764705882353,2.1968325791855206
