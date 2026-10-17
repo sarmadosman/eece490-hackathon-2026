@@ -14,6 +14,10 @@ Similar increases at other cutoffs weaken the interpretation that the observed g
 
 Evidence: [phase metrics](calendar_phase_summary.csv), [alternative cutoffs](alternative_cutoff_comparisons.csv), [forecast backtests](forecast_backtest_scores.csv), [preparation backtest](preparation_backtest.csv).
 
+**Model versus baseline on later data:** select using pre-March-2 validation, refit only through March 1, then evaluate frozen forecasts on March 2–29. Compared with repeating the last matching weekday, the earlier-selected models reduce test MAE from 12.39 to 10.82 orders/day at Harbour (12.7%), 8.21 to 6.74 at Garden (17.9%), and 5.68 to 4.58 at Uptown (19.4%). Garden's regression still loses to the four-week average (6.04), while Harbour's selected average loses to the regression (9.56). Report both losses and retain the earlier choices. These outcomes are excluded from fitting/selection but have already been explored retrospectively. The [evaluation report](forecast_evaluation.md) gives all candidates, MAE/WAPE, exact splits, and limitations; lower forecast error is not measured operating profit.
+
+**Figure — baseline test:** [forecast_holdout.png](figures/forecast_holdout.png) compares all candidates on the same 28 later days, with outlines identifying choices made before the test period. It supports testing transparent preparation rules rather than assuming model complexity adds value.
+
 **Figure — demand and overlap:** [calendar_timeline.png](figures/calendar_timeline.png) shows increasing recorded orders alongside selected aggregate measures. Compare their trajectories without treating broad similarity as equivalence.
 
 ## Conclusion 2: The observed promotion results do not establish that the discounts paid for themselves.

@@ -42,7 +42,7 @@ Since the events cannot be separated, we did not try to assign effects to each o
 
 1. **Matched windows.** We compared the 28 days before March 2 (Feb 2–Mar 1) with the 28 days after (Mar 2–29). Both windows contain the same mix of weekdays. We repeated this with 7-, 14- and 42-day windows, and around the start and end of Ramadan and Lent.
 2. **Alternative cutoffs (placebo dates).** We ran the same 28-day before/after comparison at 19 other dates. Similar increases at other cutoffs weaken the interpretation that the observed growth uniquely marks March 2; they do not rule out conflict-related effects.
-3. **Forecasts trained only on pre-war data.** We used three simple models, each tested chronologically on data it had not seen. Their March projections give an "earlier patterns continued" reference, not a verified no-war outcome.
+3. **Forecasts compared with simple baselines on later data.** We selected among three forecasting rules using pre-March-2 validation, refit only through March 1, then scored all candidates on March 2–29 without updating or reselecting. Their March projections give an "earlier patterns continued" reference, not a verified no-war outcome.
 4. **An observational promotion comparison.** Harbour ran the same promotion twice; Garden and Uptown did not. We compared Harbour with the other two branches before, during and after each wave. We then repeated the comparison for 60 overlapping non-promotion windows to describe background variation; these are not independent experiments or a power analysis.
 5. **Customer cohorts.** We froze the pre-war customer list, then tracked where (which branch) and when (28 versus 56 days) those customers showed up again.
 6. **Calendar regressions** as a cross-check: weekday effects, a trend term, and separate Ramadan, Lent and post-March-2 indicators, with robust (HAC) errors and five model specifications.
@@ -76,7 +76,20 @@ Each conclusion lists **what we measured**, the **alternative explanations we te
 - **The rise is not unique to March 2.** The same 28-day comparison at 19 other dates gives **+5.9% to +10.7%** ([alternative_cutoff_comparisons.csv](reports/alternative_cutoff_comparisons.csv)). Stories was growing steadily all half-year, from about 143 orders/day in early January to about 225 in late June.
 - **Selected aggregate measures remained broadly similar.** Across the multi-day phases, evening share ranged from 50.0% to 51.0%, takeaway share from 39.7% to 41.3%, recorded gross profit per order from $5.28 to $5.32, and meal attachment from approximately 2.0% to 2.4%. These aggregates do not establish equivalence, exclude branch/product changes, or rule out calendar effects.
 - **The size of the change differed by branch.** Against forecasts trained only on pre-war data, the 28 days after March 2 came in at **Harbour +10.4%**, **Uptown +7.7%** and **Garden −2.2%** ([projection_summary.csv](reports/projection_summary.csv)). Garden's figure changes sign depending on the model (−2.2% to +5.1%); Harbour's (+5.3% to +12.0%) and Uptown's (+7.7% to +13.0%) do not ([projection_model_sensitivity.csv](reports/projection_model_sensitivity.csv)).
-- **The models were compared with simple baselines on data they never saw.** For daily order forecasts we tested three candidates chronologically: previous same weekday, mean of the last four same weekdays, and trend plus weekday. The simplest rule, "same as last week", lost at every branch. 14-day MAE was 10.52 vs 9.87 orders/day at Harbour, 8.05 vs 6.26 at Garden, and 6.81 vs 4.35 at Uptown ([forecast_backtest_scores.csv](reports/forecast_backtest_scores.csv)). For food preparation, "mean of the last four same weekdays" beat "last week" on four months of out-of-sample data (Mar 2–Jun 30): Harbour bakery MAE fell from 7.52 to 5.49 units/day and meal MAE from 2.90 to 2.20 ([preparation_backtest.csv](reports/preparation_backtest.csv)).
+- **Development comparisons and final testing are separate.** Three earlier, overlapping 14-day validation folds selected the four-week weekday average at Harbour and trend-plus-weekday regression at Garden and Uptown ([development scores](reports/forecast_backtest_scores.csv)). The table below evaluates all candidates on later outcomes excluded from fitting and selection.
+- **The food-preparation comparison has a different target and horizon.** Updated daily using only prior sales, the four-week weekday average beat the previous-weekday rule over Mar 2–Jun 30: Harbour bakery MAE fell from 7.52 to 5.49 units/day and meal MAE from 2.90 to 2.20 ([preparation_backtest.csv](reports/preparation_backtest.csv)). This is distinct from the frozen 28-day order forecast below.
+
+**Baseline and separate test:** training/refit ends **March 1**; the test is **March 2–29**. The simple baseline repeats the last matching weekday available before the test. Every candidate forecasts the same 28 days without seeing any test-period sales. **MAE is the average absolute error in orders per branch per day; lower is better.** Bold values identify the model chosen using earlier validation, not the best result chosen afterward.
+
+| Branch | Last matching weekday: baseline | Four-week weekday average | Trend + weekday regression | Selected model's MAE reduction vs baseline |
+|---|---:|---:|---:|---:|
+| Harbour | 12.39 | **10.82** | 9.56 | 12.7% |
+| Garden | 8.21 | 6.04 | **6.74** | 17.9% |
+| Uptown | 5.68 | 5.16 | **4.58** | 19.4% |
+
+The selected models beat last matching weekday at every branch, but the regression loses to the four-week average at Garden, and Harbour's selected average loses to the regression. We retain those results without changing the selections after testing. These dates were already explored in the analysis; this is a retrospective test excluded from model fitting/selection, not a prospective trial. See the [evaluation report](reports/forecast_evaluation.md), [full scores including WAPE](reports/forecast_holdout_scores.csv), and [per-date predictions](reports/forecast_holdout_predictions.csv).
+
+**Figure — forecast baseline comparison:** [forecast_holdout.png](reports/figures/forecast_holdout.png) shows all three candidates on the same test dates. Dark outlines mark choices made using earlier validation. A more complex model does not consistently win; lower recorded-sales error alone does not establish profit gains.
 
 **Alternative explanations tested:** We tested whether the increase was a war effect, a Ramadan effect or a Lent effect. In five regression specifications, the Ramadan estimate is +1.7% to +2.4% and the Lent estimate −3.7% to −1.6%, with every 95% interval including zero. The post-March-2 estimate is +3.4% to +6.6%, and four of the five intervals include zero ([calendar_adjusted_associations.csv](reports/calendar_adjusted_associations.csv)). Ramadan and Lent overlap so much that their indicators have a correlation of 0.72. Our reading is that the rise is mostly ongoing growth, with a possible extra step around March 2 that we cannot reliably separate from the trend.
 
@@ -159,7 +172,7 @@ Among the 1,978 identified accounts active in the baseline window, 1,692 were ob
 | **Signs the data may be synthetic or sampled** | "SYN-" IDs, one fixed price per product, 94% of customers using several branches, very stable shares | Patterns may be cleaner than in real operations. Dollar amounts reflect the dataset's size and should not be read as company totals |
 | **Gross profit excludes labour, rent, waste and stock-outs** | Profit here is recorded revenue minus recorded product cost | Value estimates are gross-profit estimates. Missed demand from stock-outs (Conclusion 1) is invisible |
 | **No opening hours, stock-outs, wait times or marketing calendar** | Low sales could mean closed, sold out or low demand | Forecasts predict recorded sales, not true demand |
-| **Short forecasting history** | Only about 60 pre-war days: three overlapping 14-day test folds and one 28-day fold | Forecast errors are rough development estimates, not guaranteed accuracy. The bands in [demand_projection.png](reports/figures/demand_projection.png) are not calibrated intervals |
+| **Short forecasting history** | Only 60 pre-cutoff days for three overlapping 14-day development folds and one 28-day development fold; separate March 2–29 testing covers one event period already explored retrospectively | The selected forecasts beat last-week baselines on the later test, but not every other simple rule. No guarantee of future accuracy or causal attribution. The bands in [demand_projection.png](reports/figures/demand_projection.png) are not calibrated intervals |
 | **Many comparisons** | Windows, branches and models multiply the chance of finding something | We report full tables and model ranges, not the most favourable result, and we built conclusions only on patterns that repeat across windows or cutoffs |
 
 **Where uncertainty remains.** Promotion effects may include unmeasured later purchases, substitution, and operating costs. Similar aggregate measures do not guarantee a future shock will preserve demand or its distribution. Customer timing results depend on complete follow-up and globally consistent IDs, and the more profitable contact policy requires a randomized comparison.
@@ -239,7 +252,8 @@ We re-checked every headline number from the raw data and re-ran the tests. We t
 |---|---|
 | `README.md` | This document: the final submission |
 | `scripts/promotion_test.py` | Observational Harbour promotion comparison, same-mix break-even, and overlapping background windows (Conclusion 2) |
-| `src/stories/analysis.py` | Main pipeline: data quality, matched windows, forecasting backtests, preparation backtest, figures |
+| `src/stories/analysis.py` | Main pipeline: data quality, matched windows, forecast development and separate baseline/test comparison, preparation backtest, figures |
+| `reports/forecast_evaluation.md` | Training/validation/test dates, baseline definition, all later-period scores, limitations, and figure |
 | `src/stories/calendar.py` | Phase table, boundary comparisons, calendar regressions (Conclusion 1) |
 | `src/stories/customers.py` | Customer growth breakdown, fixed groups, cross-branch tracking, 28/56-day follow-up (Conclusion 3) |
 | `src/stories/business.py`, `diagnostics.py`, `scenario.py` | Item/branch economics, alternative cutoffs, same-product costs, scenario arithmetic |
@@ -248,7 +262,7 @@ We re-checked every headline number from the raw data and re-ran the tests. We t
 | `notebooks/reference/` | The two Colab notebooks from the ChatGPT stage (`Stories_Coffee_EDA.ipynb`, `Stories_Coffee_Before_After.ipynb`), unmodified with saved outputs |
 | `reports/*_memo.md`, `docs/*.md` | Working memos from the Codex stage, in order: food offers → item/branch → calendar → customers (see §9), plus detailed method notes |
 | `docs/project_context.md` | Where each source came from, including the ChatGPT conversation |
-| `tests/` | 18 unit tests for the analysis code |
+| `tests/` | 19 unit tests, including no-lookahead checks and independently calculated baseline metrics |
 
 **Key figures:** [calendar_timeline.png](reports/figures/calendar_timeline.png) (orders, evening share and GP/order across the calendar) · [promotions_and_cutoffs.png](reports/figures/promotions_and_cutoffs.png) (Harbour discount waves and alternative cutoffs) · [demand_projection.png](reports/figures/demand_projection.png) (pre-war forecast vs actual).
 
@@ -261,5 +275,5 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 PYTHONPATH=src python3 -m stories.analysis     # regenerates reports/ and reports/figures/
 python3 scripts/promotion_test.py              # Conclusion 2 evidence
-python3 -m pytest -q                           # 18 tests
+python3 -m pytest -q                           # 19 tests
 ```

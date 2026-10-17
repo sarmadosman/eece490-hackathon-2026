@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CUTOFF = pd.Timestamp('2026-03-02')  # User-supplied context, not inferred causality.
 DRINKS = ['Hot Coffee', 'Cold Coffee', 'Matcha & Tea']
 FOODS = ['Bakery', 'Meals']
+FORECAST_MODELS = ['previous_weekday', 'recent_weekday_average', 'trend_weekday']
 COLUMNS = {
     'Transaction ID': 'transaction', 'Date': 'date', 'Time': 'time',
     'Branch': 'branch', 'Customer ID': 'customer', 'Order Type': 'order_type',
@@ -171,7 +172,7 @@ def demand(d):
     if len(pre) < 56:
         raise ValueError('At least 56 pre-cutoff days are required for the planned backtests.')
     records = []
-    models = ['previous_weekday', 'recent_weekday_average', 'trend_weekday']
+    models = FORECAST_MODELS
     for branch in daily:
         for horizon in [14, 28]:
             # Overlapping origins are diagnostic, not independent experiments.
@@ -205,6 +206,134 @@ def demand(d):
                 lower_sensitivity_band=max(0, float(value-radius)),
                 upper_sensitivity_band=float(value+radius)))
     return daily, validation, scores, pd.DataFrame(forecast_rows)
+
+
+def forecast_holdout(daily, validation_scores):
+    """Score frozen pre-cutoff candidates on later outcomes, without reselection.
+
+    This is a retrospective temporal holdout: analysts have inspected these dates,
+    but neither fitting nor the selection rule consumes their outcomes.
+    """
+    dates = pd.date_range(CUTOFF, periods=28)
+    if not dates.isin(daily.index).all():
+        raise ValueError('The full March 2–29 holdout must be observed.')
+    selected = (validation_scores[validation_scores.horizon == 14]
+                .sort_values('mae').groupby('branch').first())
+    records = []
+    for branch in daily:
+        train = daily.loc[daily.index < CUTOFF, branch]
+        for model in FORECAST_MODELS:
+            predictions = predict(train, dates, model)
+            for date, actual, prediction in zip(dates, daily.loc[dates, branch], predictions):
+                records.append(dict(branch=branch, model=model,
+                    selected_on_validation=model == selected.loc[branch, 'model'],
+                    train_start=train.index.min(), train_end=train.index.max(),
+                    date=date, step=(date - CUTOFF).days + 1, horizon=28,
+                    actual=float(actual), prediction=float(prediction),
+                    absolute_error=float(abs(actual - prediction)),
+                    signed_error=float(prediction - actual)))
+    predictions = pd.DataFrame(records)
+    scores = predictions.groupby(['branch', 'model', 'selected_on_validation']).agg(
+        train_start=('train_start', 'min'), train_end=('train_end', 'max'),
+        test_start=('date', 'min'), test_end=('date', 'max'), test_days=('date', 'nunique'),
+        mae=('absolute_error', 'mean'), absolute_error=('absolute_error', 'sum'),
+        actual_total=('actual', 'sum'), bias=('signed_error', 'mean')).reset_index()
+    scores['wape'] = scores.absolute_error / scores.actual_total
+    baseline = scores[scores.model == 'previous_weekday'].set_index('branch').mae
+    scores['baseline_mae'] = scores.branch.map(baseline)
+    scores['mae_reduction_vs_baseline_pct'] = 100 * (1 - scores.mae / scores.baseline_mae)
+    return predictions, scores
+
+
+def write_forecast_evaluation(scores, validation, output):
+    """Write the split, all test scores, and a baseline-comparison figure."""
+    labels = {'previous_weekday': 'Last matching weekday (baseline)',
+              'recent_weekday_average': 'Prior four matching weekdays',
+              'trend_weekday': 'Linear trend + weekday'}
+    first = scores.iloc[0]
+    folds = validation[validation.horizon == 14].groupby('origin').agg(
+        start=('date', 'min'), end=('date', 'max'))
+    fold_text = '; '.join(f'{r.start:%b %d}–{r.end:%b %d}' for r in folds.itertuples())
+    lines = [
+        '# Forecast models versus a simple baseline on later data', '',
+        'This evaluation supports the demand/preparation decision in Conclusion 1. '
+        'It does not estimate the causal effect of war, Ramadan, or Lent.', '',
+        f'**Training/refit:** {first.train_start:%B %d}–{first.train_end:%B %d, %Y}. '
+        f'**Model selection:** lowest mean MAE on three earlier 14-day validation folds '
+        f'({fold_text}). Those folds overlap; they are development comparisons, '
+        'not independent final tests.', '',
+        f'**Separate test:** {first.test_start:%B %d}–{first.test_end:%B %d, %Y} '
+        '(28 days per branch). Fit every candidate through March 1 and issue the '
+        'whole 28-day forecast once. Do not update with test-period sales, refit '
+        'on them, or use them to choose a replacement winner. The baseline repeats '
+        'the most recent matching weekday available on March 1. All three '
+        'candidates use exactly the same history and target dates.', '',
+        '**Retrospective scope:** these dates have appeared in the exploratory '
+        'analysis. They are excluded from fitting and the coded selection rule, '
+        'rather than a never-inspected or prospective test. New future data are '
+        'needed to confirm generalization.', '',
+        '**Metrics:** MAE is the mean absolute error in orders per branch per day '
+        '(lower is better). WAPE is total absolute error divided by total recorded '
+        'orders. Positive MAE reduction means improvement over the simple baseline. '
+        'Bias is prediction minus actual, averaged over days.', '',
+        '| Branch | Candidate | Chosen on earlier validation? | Test MAE | Test WAPE | MAE reduction vs baseline |',
+        '|---|---|---|---:|---:|---:|',
+    ]
+    for branch in scores.branch.unique():
+        for model in FORECAST_MODELS:
+            r = scores[(scores.branch == branch) & (scores.model == model)].iloc[0]
+            chosen = 'Yes' if r.selected_on_validation else ''
+            lines.append(f'| {branch} | {labels[model]} | {chosen} | {r.mae:.2f} | '
+                         f'{r.wape:.1%} | {r.mae_reduction_vs_baseline_pct:.1f}% |')
+    lines += ['', '**Reading the result:**', '']
+    for branch in scores.branch.unique():
+        g = scores[scores.branch == branch]
+        chosen = g[g.selected_on_validation].iloc[0]
+        best = g.sort_values('mae').iloc[0]
+        lines.append(f'- {branch}: the earlier-selected {labels[chosen.model].lower()} '
+                     f'has test MAE {chosen.mae:.2f} versus {chosen.baseline_mae:.2f} '
+                     f'for last matching weekday ({chosen.mae_reduction_vs_baseline_pct:.1f}% lower). '
+                     f'The lowest test error among all candidates is {best.mae:.2f} '
+                     f'for {labels[best.model].lower()}.')
+    lines += ['', 'Compare each selected candidate with both simple rules, rather '
+              'than assuming that a regression must be better. Keep losses visible '
+              'and do not switch the reported selection using this test. This one '
+              'short, overlapping-event period does not establish statistical '
+              'superiority or lasting forecast accuracy.', '',
+              '**Business use:** pilot the transparent recent-weekday preparation '
+              'rule and monitor forecast error, stockouts, waste, and service. Lower '
+              'sales forecast error is not measured profit or an optimal stock level. '
+              'The separate food-unit backtest updates each day using only prior '
+              'sales; it has a different horizon and target and is not this frozen '
+              'order-forecast test.', '',
+              '![All candidates on the same later test dates](figures/forecast_holdout.png)', '',
+              'Outlined bars mark choices made using earlier validation. '
+              'The bars show point errors on 28 days, not confidence intervals. '
+              'Reproduce with `PYTHONPATH=src python3 -m stories.analysis`. '
+              'See [per-date predictions](forecast_holdout_predictions.csv) and '
+              '[full test scores](forecast_holdout_scores.csv).', '']
+    (output / 'forecast_evaluation.md').write_text('\n'.join(lines))
+
+    import matplotlib.pyplot as plt
+    branches = list(scores.branch.unique())
+    x = np.arange(len(branches))
+    fig, ax = plt.subplots(figsize=(10, 5))
+    for i, (model, color) in enumerate(zip(FORECAST_MODELS, ['#94a3b8', '#16877a', '#c25a28'])):
+        g = scores[scores.model == model].set_index('branch').loc[branches]
+        bars = ax.bar(x + (i - 1) * .25, g.mae, width=.23, color=color, label=labels[model])
+        for bar, r in zip(bars, g.itertuples()):
+            if r.selected_on_validation:
+                bar.set_edgecolor('#0f172a'); bar.set_linewidth(2.5)
+            ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + .12,
+                    f'{r.mae:.2f}', ha='center', fontsize=8)
+    ax.set(xticks=x, xticklabels=branches, ylabel='Test MAE (orders / branch / day; lower is better)',
+           title='Frozen forecasts versus simple rules: March 2–29, 2026')
+    ax.set_ylim(0, scores.mae.max() * 1.32)
+    ax.legend(fontsize=8, loc='upper right')
+    fig.text(.5, .01, 'All trained through March 1. Dark outlines: selected on earlier validation. No test-period updates.',
+             ha='center', fontsize=8)
+    fig.tight_layout(rect=[0, .04, 1, 1])
+    fig.savefig(output / 'figures/forecast_holdout.png'); plt.close(fig)
 
 
 def preparation(d):
@@ -320,7 +449,7 @@ def run(data_path=ROOT / 'data/raw/stories_transactions.csv', output=ROOT / 'rep
     sensitivity = []
     for branch in daily:
         train = daily.loc[daily.index < CUTOFF, branch]
-        for model in ['previous_weekday', 'recent_weekday_average', 'trend_weekday']:
+        for model in FORECAST_MODELS:
             total = float(predict(train, pd.date_range(CUTOFF, periods=28), model).sum())
             actual = int(daily.loc[CUTOFF:CUTOFF + pd.Timedelta(days=27), branch].sum())
             sensitivity.append(dict(branch=branch, model=model, projected_orders=total,
@@ -341,6 +470,10 @@ def run(data_path=ROOT / 'data/raw/stories_transactions.csv', output=ROOT / 'rep
     fd.groupby(['branch', 'model']).agg(actual_orders=('actual', 'sum'),
         projected_orders=('prediction', 'sum')).to_csv(output / 'projection_deduplicated.csv')
     make_figures(daily, forecast, comparison, opportunities, output / 'figures')
+    holdout_predictions, holdout_scores = forecast_holdout(daily, scores)
+    holdout_predictions.to_csv(output / 'forecast_holdout_predictions.csv', index=False)
+    holdout_scores.to_csv(output / 'forecast_holdout_scores.csv', index=False)
+    write_forecast_evaluation(holdout_scores, validation, output)
     calendar_results = run_calendar(d, b, output)
     diagnostics = run_diagnostics(d, b, output)
     business = run_business(d, b, calendar_results, diagnostics, output)
@@ -349,6 +482,7 @@ def run(data_path=ROOT / 'data/raw/stories_transactions.csv', output=ROOT / 'rep
     print('\nProjection summary (descriptive, not causal):\n' + fs.to_string(index=False))
     return {'data': d, 'baskets': b, 'opportunities': opportunities,
             'scores': scores, 'forecast': forecast, 'comparison': comparison,
+            'holdout_scores': holdout_scores, 'holdout_predictions': holdout_predictions,
             'calendar': calendar_results, 'diagnostics': diagnostics, 'business': business,
             'customers': customers}
 
